@@ -7,7 +7,7 @@ handler.before = m => {
     let before = user.level * 1
     while (levelling.canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let str = `Selamat @${m.sender.split`@`[0]} Anda Naik 🧬level 
+        let str = `Felicitaciones @${m.sender.split`@`[0]} Subes de nivel 😎😜🥳
 *${before}* --> *${user.level}*
 `.trim()
         conn.reply(m.chat, str, false, {

@@ -284,7 +284,7 @@ module.exports = {
             let user = global.DATABASE._data.users[m.sender]
             if (!['unbanchat.js', 'link.js', 'pengumuman.js', 'creator.js'].includes(name) && chat && chat.isBanned && !isROwner) return // Except this
             if (!['unbanuser.js', 'inv.js', 'link.js', 'creator.js', 'profile.js'].includes(name) && user && user.banned && !isROwner) {
-              if (!opts['msgifbanned']) m.reply(`*ANDA TERBANNED* ${user.bannedReason ? `\nKarena *${user.bannedReason}*` : ''}
+              if (!opts['msgifbanned']) m.reply(`*ESTÁS BANEADO* ${user.bannedReason ? `\npORQUE *${user.bannedReason}*` : ''}
 
 Hubungi: 
 ${global.owner.map((v, i) => '*Owner ' + (i + 1) + ':* wa.me/' + v).join('\n') + '\n\n' + global.mods.map((v, i) => '*Moderator ' + (i + 1) + ':* wa.me/' + v).join('\n')}
@@ -339,7 +339,7 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
           if (xp > 99999999999) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.DATABASE._data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
+            this.reply(m.chat, `Su límite ha terminado, compre a través de *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
           let extra = {
@@ -448,8 +448,8 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
               pp = await this.getProfilePicture(user)
             } catch (e) {
             } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Bienvenido, @user!').replace('@subject', await this.getName(jid)).replace('@desc', groupMetadata.desc) :
+                (chat.sBye || this.bye || conn.bye || 'Adios, @user!')).replace('@user', '@' + user.split('@')[0])
               this.sendFile(jid, pp, 'pp.jpg', text, null, false, {
                 contextInfo: {
                   mentionedJid: [user]
@@ -460,9 +460,9 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Ahora es administrador```')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Ya no es Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
           contextInfo: {
@@ -480,7 +480,7 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
     await this.reply(m.key.remoteJid, `
 Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
 
-Untuk mematikan fitur ini, ketik
+Para desactivar esta función, escriba
 *.enable delete*
 `.trim(), m.message, {
       contextInfo: {
@@ -518,21 +518,21 @@ Untuk mematikan fitur ini, ketik
       
       await this.send(`${tag},${JSON.stringify(NodePayload)}`)
     }
-    await this.sendMessage(from, 'Maaf, Tolong jangan telfon BOT!!', MessageType.extendedText)
+    await this.sendMessage(from, 'Lo siento, no llames al BOT!!', MessageType.extendedText)
   }
 }
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-    group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    rowner: 'Este comando solo puede ser utilizado por _*OWWNER!!!*_',
+    owner: 'Este comando solo puede ser utilizado por _*Owner Bot*_!',
+    mods: 'Este comando solo puede ser utilizado por _*Moderator*_ !',
+    premium: 'Este pedido es solo para miembros _*Premium*_ !',
+    group: 'Este comando solo se puede usar en grupos!',
+    private: 'Este comando solo se puede usar en el chat privado!',
+    admin: 'Este comando es solo para el grupo de *Admin* 😎!',
+    botAdmin: 'Hacer el Bot *Admin* para usar este comando!',
+    unreg: 'Regístrese para usar esta función escribiendo:\n\n*#daftar nombre.edad*\n\nEjemplo: *#daftar Shadow.18*'
   }[type]
   if (msg) return m.reply(msg)
 }

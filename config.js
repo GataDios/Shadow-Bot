@@ -2,29 +2,29 @@ global.DeveloperMode = 'false' //true Or false
 global.linkGC = ['https://chat.whatsapp.com/Lb4Emjih98rBiCZiZoS2eM', 'https://chat.whatsapp.com/FrluVyY5kBRIhY6yKfH4DI']
 global.Owner = {
   // use the phone number with the country code, for example Indonesia '62' America '1' etc
-  '6281390658325': { // put your number here
-    name: 'Owner Metro Bot/Creator games-wabot',
+  '19527773705': { // put your number here
+    name: 'Bruno, dueño de: The Shadow Brokers - Bot',
     isDev: true, // if true this number will send if bot have bug and developer mode true
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: true // if true this number will send if user use command /owner or /creator
   },
-  '6282256115584': { // put your number here
+  '19527773705': { // put your number here
     name: 'Dave',
     isDev: false, // if true this number will send if bot have bug and developer mode true
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: false // if true this number will send if user use command /owner or /creator
   },
-  '60199782326': {
+  '19527773705': {
     name: 'Adiixyz',
     isReport: true, // if true this number will send if user use command /report or /join
   },
-  '6285713964963': {
+  '19527773705': {
     isReport: true
   },
-  '13479805233': {} // ignore if you don't want anything, like name dll
+  '19522438154': {} // ignore if you don't want anything, like name dll
 }
-global.mods = ['13479805233'] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.mods = ['19522438154'] // Want some help?
+global.prems = ['5219996125657'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',

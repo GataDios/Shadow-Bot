@@ -21,10 +21,10 @@ handler.before = function (m) {
         }))
         if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
             m.reply({
-                '-3': 'Game telah berakhir',
-                '-2': 'Invalid',
-                '-1': 'Posisi Invalid',
-                0: 'Posisi Invalid',
+                '-3': 'El juego ha terminado',
+                '-2': 'Invalido',
+                '-1': 'Posicion Invalida',
+                0: 'Posicion Invalida',
             }[ok])
             return !0
         }
@@ -55,8 +55,8 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} Menang!` : isTie ? 'Game berakhir' : `Menunggu @${room.game.currentTurn.split('@')[0]}`}
-Ketik *nyerah* untuk nyerah
+${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@')[0]} Ganar!` : isTie ? 'Juego terminado' : `Esperando @${room.game.currentTurn.split('@')[0]}`}
+Escriba *nyerah* para rendirse
 `.trim()
         if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
             room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat

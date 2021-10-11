@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, participants }) => {
       invite_code,
       invite_code_exp
     }]] = Object.entries(user)
-    let teks = `Mengundang @${jid.split('@')[0]} menggunakan invite...`
+    let teks = `Invitando a @${jid.split('@')[0]} utilizando invitacion...`
     m.reply(teks, null, {
       contextInfo: {
         mentionedJid: conn.parseMention(teks)
@@ -29,7 +29,7 @@ let handler = async (m, { conn, text, participants }) => {
     } : {})
   }
 }
-handler.help = ['add', '+'].map(v => v + ' nomor,nomor')
+handler.help = ['add', '+'].map(v => v + ' número')
 handler.tags = ['admin']
 handler.command = /^(add|\+)$/i
 handler.owner = false

@@ -21,10 +21,10 @@ handler.before = function (m) {
         }))
         if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
             m.reply({
-                '-3': 'El juego ha terminado',
-                '-2': 'Invalido',
-                '-1': 'Posicion Invalida',
-                0: 'Posicion Invalida',
+                '-3': 'Game telah berakhir',
+                '-2': 'Invalid',
+                '-1': 'Posisi Invalid',
+                0: 'Posisi Invalid',
             }[ok])
             return !0
         }

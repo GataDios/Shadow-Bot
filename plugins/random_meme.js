@@ -3,12 +3,12 @@ let fetch = require('node-fetch')
 
 let handler  = async (m, { conn, text }) => {
  try {
-    let res = await fetch('https://meme-api.herokuapp.com/gimme')
+    let res = await fetch('https://meme-api.herokuapp.com/gimme/memesmexico')
     let json = await res.json()
     if (json.status) throw json
     let caption = `
 ©Reddit
-Author: ${json.author} Subreddit: ${json.subreddit}
+Autor: ${json.author} Subreddit: ${json.subreddit}
 ${json.postLink}
 `.trim()
     conn.sendFile(m.chat, json.url, 'test.jpg', caption, m)

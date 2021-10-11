@@ -1,41 +1,29 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, args }) => {
-  if (!args[0]) throw 'Uhm...y el nombre de usuario?'
-  let res = await fetch(global.API('xteam', '/dl/igstalk', {
-    nama: args[0]
-  }, 'APIKEY'))
-  let json = await res.json()
-  if (res.status != 200) throw json
-  if (json.result.error) throw json.result.message
-  let {
-    full_name,
-    username,
-    is_verified,
-    media_count,
-    follower_count,
-    following_count,
-    biography,
-    external_url,
-    profile_pic_url,
-    hd_profile_pic_url_info,
-    is_private
-  } = json.result.user
-  let pp = hd_profile_pic_url_info.url || profile_pic_url
-  let caption = `
-${full_name} *(@${username})* ${is_verified ? '✓' : ''}
-https://instagram.com/${username}
-${is_private ? 'Post Hidden by User' : ('*' + media_count + '* Post(s)')}
-Following *${following_count}* User(s)
-*${follower_count}* Followers
-*Bio:*
-${biography}${external_url ? '\n*External URL:* ' + external_url : ''}
-`.trim()
-  if (pp) conn.sendFile(m.chat, pp, 'ppig.jpg', caption, m)
-  else m.reply(caption)
+let googleIt = require('google-it')
+let handler = async (m, { conn, command, args }) => {
+  let full = /f$/i.test(command)
+  let text = args.join` `
+  if (!text) return conn.reply(m.chat, 'No hay texto para buscar', m)
+  let url = 'https://google.com/search?q=' + encodeURIComponent(text)
+  let search = await googleIt({ query: text })
+  let msg = search.map(({ title, link, snippet}) => {
+    return `*${title}*\n_${link}_\n_${snippet}_`
+  }).join`\n\n`
+  let ss = await (await fetch(global.API('nrtm', '/api/ssweb', { delay: 1000, url, full }))).buffer()
+  conn.sendFile(m.chat, ss, 'screenshot.png', url + '\n\n' + msg, m)
 }
-handler.help = ['igstalk'].map(v => v + ' <username>')
-handler.tags = ['downloader']
+handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
+handler.tags = ['internet']
+handler.command = /^googlef?$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
 
-handler.command = /^(igstalk)$/i
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
 
 module.exports = handler

@@ -24,7 +24,7 @@ module.exports = {
 *Soal:* ${room.soal}
 
 Terdapat *${room.jawaban.length}* jawaban${room.jawaban.find(v => v.includes(' ')) ? `
-(beberapa jawaban terdapat spasi)
+(algunas respuestas tienen espacios)
 `: ''}
 ${isWin ? `*SEMUA JAWABAN TERJAWAB*` : isSurrender ? '*MENYERAH!*' : ''}
 ${Array.from(room.jawaban, (jawaban, index) => {

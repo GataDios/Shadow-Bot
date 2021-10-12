@@ -7,11 +7,11 @@ let handler = async (m, { conn, usedPrefix }) => {
   } finally {
     let name = m.fromMe ? conn.user : conn.contacts[m.sender]
     let str = `
-Name: ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} (@${m.sender.replace(/@.+/, '')})
-Number: +${m.sender.split`@`[0]}
-Link: https://wa.me/${m.sender.split`@`[0]}
+Nombre: ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])} (@${m.sender.replace(/@.+/, '')})
+Numero: +${m.sender.split`@`[0]}
+Link de WhatsApp: https://wa.me/${m.sender.split`@`[0]}
 ${readMore}
-\n\n*Mau nge check isi inventorymu? Ketik ${usedPrefix}inv*
+\n\n*Quiere comprobar el contenido de su inventario? Escriba ${usedPrefix}inv*
 `.trim()
     let mentionedJid = [m.sender]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})

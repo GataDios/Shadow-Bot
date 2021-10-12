@@ -34,9 +34,12 @@ const defaultMenu = {
 ╭─「 %me 」
 │ ${ucapan()}, %name!
 │
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
+│ La lista de comandos esta en 
+│ indones puedes usar 
+│ #translate es (texto)
+│ para traducir el texto a español 
+│ O solicita al privado la lista 
+│ de algunos comandos en español
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg

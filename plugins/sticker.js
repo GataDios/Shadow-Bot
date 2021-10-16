@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
       let img = await q.download()
-      if (!img) throw `balas gambar/video/stiker dengan perintah ${usedPrefix + command}`
+      if (!img) throw `Responde a una imagen/video/pegatina con el comando ${usedPrefix + command}`
       let out
       try {
         if (/webp/g.test(mime)) out = await webp2png(img)
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw `Gagal${m.isGroup ? ', balas gambarnya!' : ''}`
+    else throw `Error${m.isGroup ? ', responde a la imagen!' : ''}`
   }
 }
 handler.help = ['stiker ', 'stiker <url>']

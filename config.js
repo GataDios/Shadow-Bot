@@ -3,28 +3,28 @@ global.linkGC = ['https://chat.whatsapp.com/Lb4Emjih98rBiCZiZoS2eM', 'https://ch
 global.Owner = {
   // use the phone number with the country code, for example Indonesia '62' America '1' etc
   '19527773705': { // put your number here
-    name: 'Bruno Sobrino',
+    name: 'The Shadow Brokers - Bot',
     isDev: true, // if true this number will send if bot have bug and developer mode true
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: true // if true this number will send if user use command /owner or /creator
   },
-  '19527773705': { // put your number here
-    name: 'Dave',
+  '19525220880': { // put your number here
+    name: 'Bruno Sobrino',
     isDev: false, // if true this number will send if bot have bug and developer mode true
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: false // if true this number will send if user use command /owner or /creator
   },
-  '19527773705': {
-    name: 'Adiixyz',
+  '5219996125657': {
+    name: 'Bruno',
     isReport: true, // if true this number will send if user use command /report or /join
   },
-  '19527773705': {
+  '19179857596': {
     isReport: true
   },
-  '19522438154': {} // ignore if you don't want anything, like name dll
+  '19522137825': {} // ignore if you don't want anything, like name dll
 }
-global.mods = ['19522438154'] // Want some help?
-global.prems = ['5219996125657'] // Premium user has unlimited limit
+global.mods = ['19522137825'] // Want some help?
+global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -47,7 +47,7 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = 'wa.me/19527773705'
-global.author = 'Metro Bot Is The Best'
+global.author = 'The Shadow Bot is cool'
 
 global.multiplier = 39 // The higher, The harder levelup
 

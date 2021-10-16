@@ -4,10 +4,10 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
     conn.req = conn.req ? conn.req : {}
     let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
     let [_, code] = link.match(linkRegex) || []
-    if (!code) throw 'Link invalid'
+    if (!code) throw 'Link invalido'
     if (isMods || isOwner || m.fromMe) {
         let res = await conn.acceptInvite(code)
-        m.reply(`Berhasil join grup ${res.gid}`)
+        m.reply(`Se unió con éxito al grupo ${res.gid}`)
     } else {
     
         let name = conn.getName(m.sender)

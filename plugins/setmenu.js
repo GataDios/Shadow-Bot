@@ -3,7 +3,7 @@ let handler  = async (m, { conn, command, text }) => {
   if (type == '') {
     if (text) {
       conn.menu = text
-      conn.reply(m.chat, 'Menu berhasil diatur\n' + info, m)
+      conn.reply(m.chat, 'Menú configurado correctamente\n' + info, m)
     } else {
       conn.menu = {}
       conn.reply(m.chat, 'Menu direset', m)

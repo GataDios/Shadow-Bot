@@ -30,7 +30,7 @@ global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   nzcha: 'http://nzcha-apii.herokuapp.com',
-  bg: 'https://api.simsimi.net/v2/?text=TEXTO&lc=es','https://bochil.ddns.net',
+  bg: 'https://api.simsimi.net/v2/?text=TEXTO&lc=es',
   fdci: 'https://api.fdci.se',
   dzx: 'https://api.dhamzxploit.my.id',
   zahir: 'https://zahirr-web.herokuapp.com',

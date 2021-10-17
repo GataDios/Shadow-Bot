@@ -3,7 +3,7 @@ let Reg = /(.*)([.|])([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.DATABASE._data.users[m.sender]
   if (user.registered === true) throw `Ya estás registrado\nQuieres volver a registrarte? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
-  if (!Reg.test(text)) throw `Formato incorrecto\n*${usedPrefix}daftar <nombre>.edad>*`
+  if (!Reg.test(text)) throw `Formato incorrecto\n*${usedPrefix}daftar nombre.edad ... Ejemplo: #daftar Shadow.18*`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw 'El nombre no puede estar vacío (Alphanumeric)'
   if (!age) throw 'La edad no puede estar vacía (Angka)'
@@ -13,7 +13,7 @@ let handler = async function (m, { text, usedPrefix }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
-Daftar berhasil!
+Registrado con éxito!
 
 ╭─「 Info 」
 │ Nombre: ${name}

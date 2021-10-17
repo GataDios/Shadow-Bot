@@ -4,7 +4,7 @@ let yts = require('yt-search')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
   conn.play = conn.play ? conn.play : {}
-  if (m.chat in conn.play) throw 'Alguien todavía está buscando en YouTube\nen este chat... espera hasta que termine'
+  if (m.chat in conn.play) throw 'Alguien todavía está buscando en YouTube\nen este chat... espera hasta que termine e intentelo nuevamente'
   else conn.play[m.chat] = true
   try {
       try {

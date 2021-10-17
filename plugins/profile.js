@@ -11,7 +11,7 @@ Nombre: ${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])
 Numero: +${m.sender.split`@`[0]}
 Link de WhatsApp: https://wa.me/${m.sender.split`@`[0]}
 ${readMore}
-\n\n*Quiere comprobar el contenido de su inventario? Escriba ${usedPrefix}inv*
+\n\n*Ese es tu perfil :)*
 `.trim()
     let mentionedJid = [m.sender]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})

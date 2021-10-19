@@ -14,7 +14,7 @@ let handler = async (m, { conn, text }) => {
     quoted: m
   })
  } catch (e) {
-   m.reply('Conversion Failed')
+   m.reply('Conversion faida.. vuelva a intenterlo /// Recuerde usar el comando en leyenda al enviar una imagen o respondiendo a una /// No creo sticker partiendo de un video o gif')
    throw false
   }
 }

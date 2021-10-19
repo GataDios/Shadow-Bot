@@ -34,17 +34,14 @@ const defaultMenu = {
 ╭─「 %me 」
 │ ${ucapan()}, %name!
 │
-│ La lista de comandos esta en 
-│ indones puedes usar 
-│ #translate es (texto)
-│ para traducir el texto a español 
-│ O solicita al privado la lista 
-│ de algunos comandos en español
+│ El Bot se esta inciando
 │
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ En proceso de cambio 
+│ de menu
+│ 
+│ Si te llego este 
+│ menu.. ignoralo 
+│
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',

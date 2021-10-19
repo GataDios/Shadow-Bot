@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-      else return m.reply('URL tidak valid!')
+      else return m.reply('URL Invalida!')
     }
   } catch (e) {
     console.error(e)
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw `Error vuelva a intentarlo${m.isGroup ? ', responde a la imagen!' : ''}`
+    else throw `Error vuelva a intentarlo, recuerde responder a la imagen con #S o poner en la leyenda de la imagen es comando${m.isGroup ? ', responde a la imagen!' : ''}`
   }
 }
 handler.help = ['stiker ', 'stiker <url>']

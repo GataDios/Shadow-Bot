@@ -164,16 +164,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) return m.reply(`
-List option: welcome | delete | public | antilink | antidelete | antitoxic | autolevelup | detect | document | whitelistmycontacts | restrict | nyimak | autoread | pconly | gconly | swonly
+Lista de opciones: welcome | delete | public | antilink | restrict | autoread 
 
-Contoh:
+Ejemplo:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
 `.trim())
       throw false
   }
   m.reply(`
-*${type}* berhasil di *${isEnable ? 'nyala' : 'mati'}kan* ${isAll ? 'untuk bot ini' : isUser ? '' : 'untuk chat ini'}
+*${type}* Exitoso en *${isEnable ? 'Activar' : 'Desactivar'}kan* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}
 `.trim())
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')

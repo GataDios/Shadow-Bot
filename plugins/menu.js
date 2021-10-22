@@ -42,6 +42,13 @@ const defaultMenu = {
 │ Si te llego este 
 │ menu.. ignoralo 
 │
+│ Si el Bot es de clonacion 
+│ O sea #jadibot configura
+│ el munu con #setmenu
+│ (Unicamente el dueño 
+│ del numero con el que 
+│ se dio de alta al Bot
+│
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',

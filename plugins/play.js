@@ -15,7 +15,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
           let { dl_link, thumb, title, filesize, filesizeF} = await (/2$/.test(command) ? ytv : yta)(vid.url, 'id4')
           let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
           conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-❒═════❬ PLAY2 ❭═════╾❒
+❒═════❬ PLAY ❭═════╾❒
 ┬
 ├‣ Nombre: ${title}
 ┴
@@ -28,7 +28,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
 *${isLimit ? 'Usar ': ''}Link:* ${dl_link}
 `.trim(), m)
           if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-❒═════❬ PLAY ❭═════╾❒
+❒═════❬ PLAY2 ❭═════╾❒
 ┬
 ├‣ Nombre: ${title}
 ┴

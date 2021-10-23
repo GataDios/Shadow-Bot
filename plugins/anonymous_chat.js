@@ -10,7 +10,7 @@ async function handler(m, { command }) {
             if (!room) throw 'No estás en un chat anónimo'
             m.reply('Ok.. ha salido exitosamente')
             let other = room.other(m.sender)
-            if (other) this.sendMessage(other, 'El otro usiario decidio abandonar el chat', MessageType.text)
+            if (other) this.sendMessage(other, 'El otro usuario decidio abandonar el chat', MessageType.text)
             delete this.anonymous[room.id]
             if (command === 'leave') break
         }

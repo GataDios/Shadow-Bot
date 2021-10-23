@@ -15,15 +15,29 @@ let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
           let { dl_link, thumb, title, filesize, filesizeF} = await (/2$/.test(command) ? ytv : yta)(vid.url, 'id4')
           let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
           conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*Titulo:* ${title}
-*Tamaño del archivo:* ${filesizeF}
-*Fuente:* ${vid.url}
+❒═════❬ PLAY2 ❭═════╾❒
+┬
+├‣ Nombre: ${title}
+┴
+┬
+├‣ Tamaño: ${filesizeF}
+┴
+┬
+├‣ Fuente: ${vid.url}
+┴
 *${isLimit ? 'Usar ': ''}Link:* ${dl_link}
 `.trim(), m)
           if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-*Titulo:* ${title}
-*Tamaño del archivo:* ${filesizeF}
-*Fuente:* ${vid.url}
+❒═════❬ PLAY ❭═════╾❒
+┬
+├‣ Nombre: ${title}
+┴
+┬
+├‣ Tamaño: ${filesizeF}
+┴
+┬
+├‣ Fuente: ${vid.url}
+┴
 `.trim(), m)
       } catch (e) {
           console.log(e)

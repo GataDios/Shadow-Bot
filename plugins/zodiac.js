@@ -40,7 +40,7 @@ const zodiak = [
     ["Leo", new Date(1970, 6, 23)],
     ["Virgo", new Date(1970, 7, 23)],
     ["Libra", new Date(1970, 8, 23)],
-    ["Scorpio", new Date(1970, 9, 23)],
+    ["Scorpion", new Date(1970, 9, 23)],
     ["Sagitario", new Date(1970, 10, 22)],
     ["Capricornio", new Date(1970, 11, 22)]
 ].reverse()

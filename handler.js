@@ -339,7 +339,7 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
           if (xp > 99999999999) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.DATABASE._data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Su límite ha terminado, compre a través de *${usedPrefix}buy*`, m)
+            this.reply(m.chat, `Su límite ha terminado, contacte con el creador para que reinicie el limite`, m)
             continue // Limit habis
           }
           let extra = {
@@ -388,7 +388,7 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+            if (m.limit) m.reply(+ m.limit + ' Límite utilizado, pide al creador que te agregue a premium, en el menu indicaciones a seguir')
           }
           break
         }

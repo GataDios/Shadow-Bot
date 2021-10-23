@@ -8,8 +8,8 @@ let handler = async (m, { conn, args }) => {
     let txt = (args.length > 1 ? args.slice(1).join(' ') : '') || '' 
     user.Banneduser = true 
     user.BannedReason = txt 
-    m.reply('Usiario bloqueado con éxito!')
-    m.reply('*Está prohibido por el PROPIETARIO o MODERADOR!!*\n *CONTACTO* \n' + global.owner.map((v, i) => '*Owner ' + (i + 1) + ':* wa.me/' + v).join('\n') + '\n\n' + global.mods.map((v, i) => '*Moderador ' + (i + 1) + ':* wa.me/' + v).join('\n'), mention)
+    m.reply('Usuario baneado con éxito!')
+    m.reply('*Ah sido BANEADO por el PROPIETARIO o algun MODERADOR!!*\n *CONTACTO* \n' + global.owner.map((v, i) => '*Owner ' + (i + 1) + ':* wa.me/' + v).join('\n') + '\n\n' + global.mods.map((v, i) => '*Moderador ' + (i + 1) + ':* wa.me/' + v).join('\n'), mention)
 }
 
 handler.help = ['ban']

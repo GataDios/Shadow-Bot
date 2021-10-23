@@ -35,7 +35,7 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
     conn.on('group-participants-update', conn.onParticipantsUpdate)
     conn.regenerateQRIntervalMs = null
     conn.connect().then(async ({user}) => {
-      parent.reply(m.chat, 'Conectado exitosamente con WhatsApp - mu.\n*NOTA: Esto es solo temporal*\n' + JSON.stringify(user, null, 2), m)
+      parent.reply(m.chat, 'Conectado exitosamente con WhatsApp\n*NOTA: Esto es solo temporal*\n' + JSON.stringify(user, null, 2), m)
       if (auth) return
       await parent.sendMessage(user.jid, `Puede iniciar sesión sin el codigo qr con el siguiente mensaje, envialo cuando no funcione el bot y no haya dicho conexion perdida..`, MessageType.extendedText)
       parent.sendMessage(user.jid, `${usedPrefix + command} ${Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')}`, MessageType.extendedText)

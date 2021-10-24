@@ -45,7 +45,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 Inventario *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*\n
 Dinero: *${money}*
 XP: *${exp}*\n
-\n${readMore}\n
 Warn: *${warn}*
 Banned: *No*
 `.trim()

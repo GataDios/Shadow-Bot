@@ -198,7 +198,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['info''menu2']
+handler.help = ['info']
 handler.tags = ['about']
 handler.command = /^(info(bot)?)$/i
 

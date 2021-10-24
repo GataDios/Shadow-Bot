@@ -14,16 +14,16 @@ global.Owner = {
     isReport: true, // if true this number will send if user use command /report or /join
     isCreator: false // if true this number will send if user use command /owner or /creator
   },
-  '19522137825': {
+  '5219996125657': {
     name: 'Bruno',
     isReport: true, // if true this number will send if user use command /report or /join
   },
   '19179857596': {
     isReport: true
   },
-  '5219996125657': {} // ignore if you don't want anything, like name dll
+  '19522137825': {} // ignore if you don't want anything, like name dll
 }
-global.mods = ['5219996125657'] // Want some help?
+global.mods = ['19522137825'] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -46,7 +46,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Bot: 19527773705'
+global.packname = 'wa.me/19527773705'
 global.author = 'The Shadow Bot is cool'
 
 global.multiplier = 39 // The higher, The harder levelup

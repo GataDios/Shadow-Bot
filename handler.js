@@ -388,7 +388,7 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
                 console.error(e)
               }
             }
-            if (m.limit) m.reply(+ m.limit + ' Límite utilizado, pide al creador que te agregue a premium, en el menu indicaciones a seguir')
+            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
           }
           break
         }

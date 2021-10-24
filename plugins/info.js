@@ -10,7 +10,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   await m.reply('Espere.. esto puede demorar un poco!!')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-ㅤㅤㅤLISTA DE COMANDOS CON SU EXPLICACION:
+*_LISTA DE COMANDOS CON SU EXPLICACION:_*
 
 *<JUEGOS/>*
 

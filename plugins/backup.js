@@ -18,7 +18,7 @@ let handler  = async (m, { conn, DevMode }) => {
                     }
                 }
             } else {
-                 m.reply('Berhasil!!')
+                 m.reply('Backup realizado con exito!!')
                  console.log('database.json was copied to database ' + date + '.json')
             }
         })

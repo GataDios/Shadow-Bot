@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
   conn.reply(m.chat, `
-*Pertanyaan:* ${m.text}
-*Jawaban:* ${pickRandom(['Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'])}
+*Pregunta:* ${m.text}
+*Respuesta:* ${pickRandom(['Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'])}
 `.trim(), m, m.mentionedJid ? {
     contextInfo: {
       mentionedJid: m.mentionedJid

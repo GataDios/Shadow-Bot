@@ -54,8 +54,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Descarga música con solo el nombre de la música - Nota: Puede que tarde unos minutos en enviar el archivo mp3* 
 ° ඬ⃟📥 _#play2  *titulo del video*_
 - *Descarga música con solo el nombre de la música - Nota: Puede que tarde unos minutos en enviar el archivo mp4* 
-° ඬ⃟📥 _#lirik  *nombre de la canción*_
-- *Busca la letra de la canción y lo manda* 
+° ඬ⃟📥 _#lirik  *nombredelacanción*_
+- *Busca la letra de la canción y lo manda*
+Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik badbunnydakity 
 
 *<GESTION DE GRUPOS/>* 
 

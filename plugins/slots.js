@@ -1,10 +1,10 @@
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, command, args, usedPrefix, DevMode }) => { 
     conn.slots = conn.slots ? conn.slots : {}
-    if (m.chat in conn.slots) return m.reply('Masih ada yang melakukan slots disini, tunggu sampai selesai!!')
+    if (m.chat in conn.slots) return m.reply('Todavía hay gente jugando tragamonedas aquí, espera hasta que termine!!')
     else conn.slots[m.chat] = true
     try { 
-        if (args.length < 1) return m.reply(`Gunakan format *${usedPrefix}${command} [jumlah]*
+        if (args.length < 1) return m.reply(`Formato de uso *${usedPrefix}${command} [Cantidad]*
 contoh *${usedPrefix}${command} 999*`)
         let count = (typeof args[0] == 'number' ? Math.round(Math.max(args[0], 1)) : 1)
         let _spin1 = pickRandom(['1', '2', '3', '4', '5']) 

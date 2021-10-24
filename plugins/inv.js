@@ -43,51 +43,8 @@ let handler = async (m, { conn, usedPrefix }) => {
     let userslegendary = sortedlegendary.map(v => v[0])
     let str = `
 Inventario *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*\n
-Salud: *${healt}*
-Armor: *${armor == 0 ? 'Tidak Punya' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}*\n
 Dinero: *${money}*
-Nivel: *${level}*
 XP: *${exp}*\n
-*Inventory*
-Diamantes: *${diamond}*
-Poción: *${potion}*
-Basura: *${sampah}*
-Alimentos para mascotas: *${makananpet}*
-Total inv: *${diamond + potion + sampah + makananpet}* item\n
-*Caja*
-Común: *${common}*
-Poco común: *${uncommon}*
-Mítico: *${mythic}*
-Legendario: *${legendary}*
-Mascota: *${pet}*\n
-*Mascota*
-Caballo: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
-Zorro: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*
-Gato: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level MAX' : ''}*\n\n
-*Progreso*\n
-╭────────────────
-│Nivel *${level}* To Level *${level}*
-│XP *${exp}* -> *${max}*
-╰────────────────
-╭────────────────
-│Rubah ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Gato ${kucing == 0 ? 'Tidak Punya' : '' || kucing > 0 && kucing < 5 ? `Level *${kucing}* To level *${kucing + 1}*\n│Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Max Level*' : ''}
-╰────────────────
-╭────────────────
-│Caballo ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 5 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Max Level*' : ''}
-╰────────────────\n\n
-*logros*
-1.Nivel superior *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
-2.Dinero superior *${usersmoney.indexOf(m.sender) + 1}* dari *${usersmoney.length}*
-3.Diamante superior *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
-4.Poción superior *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
-5.Común superior *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
-6.Top poco común *${usersuncommon.indexOf(m.sender) + 1}* dari *${usersuncommon.length}*
-7.Top mítico *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
-8.Top legendario *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
-9.Papelera superior *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
 \n${readMore}\n
 Warn: *${warn}*
 Banned: *No*

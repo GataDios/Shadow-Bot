@@ -73,6 +73,10 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Desactiva la bienvenida y la despedida el grupo*
 ° ඬ⃟💎 _#listonline_
 - *Envía una lista con los usuarios del grupo que están en linea*
+° ඬ⃟💎 #enable antilink
+- *Expulsa a la persona que mande el enlace de algun grupo de WhatsApp*
+° ඬ⃟💎 #disable antilink 
+- *Desactiva la funcion de expulsar a la persona que mande el enlace de algun grupo de WhatsApp*
 ° ඬ⃟💎 _#link_
 - *Envía el enlace del grupo*
 ° ඬ⃟💎 _#linkgroup_
@@ -123,6 +127,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Envía una imagen, vídeo o gif random sobre el Pokémon Pikachu*
 ° ඬ⃟👾 _#waifu_
 - *Envía una imagen de un personaje animado de la comunidad del anime*
+° ඬ⃟👾 #apakah pregunta
+- *Te responde a la pregunta con alguna de las siguientes respuestas: 'Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'*
 
 *<COMANDOS +18/>*
 - Usar bajo su respondabilidad

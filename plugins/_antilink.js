@@ -10,7 +10,7 @@ handler.before = async function (m, { user, isBotAdmin, isAdmin }) {
     await m.reply(`*「 ANTI LINK 」*\n\nDetectado *${await this.getName(m.sender)}* has enviado un enlace al grupo!\n\nLo siento, serás expulsado de este grupo, adiós!`)
     if (isAdmin) return m.reply('*Lo siento, eres administrador, no te expulsare..*')
     if (!isBotAdmin) return m.reply('*El bot no es administrador, ¿cómo puede sacar a la gente? _-*')
-    let linkGC = ('https' + await this.groupInviteCode(m.chat))
+    let linkGC = ('https://' + await this.groupInviteCode(m.chat))
     let isLinkThisGc = new RegExp(linkGC, 'i')
     let isgclink = isLinkThisGc.test(m.text)
     if (isgclink) return m.reply('*Lol envía tu propio enlace de grupo :v*')

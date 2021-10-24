@@ -5,7 +5,7 @@ let handler = async (m, { conn, command, args, usedPrefix, DevMode }) => {
     else conn.slots[m.chat] = true
     try { 
         if (args.length < 1) return m.reply(`Formato de uso *${usedPrefix}${command} [Cantidad]*
-contoh *${usedPrefix}${command} 999*`)
+Ejemplo *${usedPrefix}${command} 999*`)
         let count = (typeof args[0] == 'number' ? Math.round(Math.max(args[0], 1)) : 1)
         let _spin1 = pickRandom(['1', '2', '3', '4', '5']) 
         let _spin2 = pickRandom(['1', '2', '3', '4', '5'])

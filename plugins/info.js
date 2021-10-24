@@ -195,6 +195,11 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Deja de ser bot*
 *_Nota: Si yo desactivo mi bot los bots creados desde este apartado se desactivan también, para volver a activarlo repetir el proceso.. Si el bot sigue activo pero el tuyo no responde enviar el comando con muchas letras que te llego al privado al escanear el código QR /// Nota2: El menu que el bot trae por defectos es el original, solo que algunos de los comandos de ahí están en otro idioma se aconseja usar el comando #setmenu y copiar y pegar el menu del Bot principal_*
 
+*_<NOTA/>_*
+
+° Manda mensaje al moderador para solicitar que te agreguen a usuarios premium y poder usar el Bot sin limites 
+- *El mensaje debe incluir el nombre del grupo en el que estas con el Bot*
+
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }

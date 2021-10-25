@@ -1,4 +1,3 @@
-
 let fetch = require('node-fetch')
 
 let handler = async(m, { conn, args, command, usedPrefix }) => {

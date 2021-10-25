@@ -18,7 +18,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Calcula el porcentaje de gay que es la persona o nombre puesto*
 ° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
 - *Calcula es porcentaje de lesbiana que es esa persona o nombre puesto*
-° ඬ⃟🕹 _#Jadian_
+° ඬ⃟🕹 _#formarpareja_
 - *Forma una pareja al azar en el grupo* 
 ° ඬ⃟🕹 _#slots *cantidad*_
 - *Simula el clásico juego de tragamonedas* 

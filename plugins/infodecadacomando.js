@@ -210,9 +210,9 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['info']
+handler.help = ['infodecadacomando']
 handler.tags = ['about']
-handler.command = /^(info(bot)?)$/i
+handler.command = /^(infodecadacomando?)$/i
 
 handler.fail = null
 

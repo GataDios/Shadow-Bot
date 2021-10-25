@@ -1,8 +1,10 @@
 global.math = global.math ? global.math : {}
 let handler = async (m, { conn }) => {
   let id = m.chat
-  if (!m.quoted || m.quoted.sender != conn.user.jid || !/^Cual es el resultado de/i.test(m.quoted.text)) throw false
-  if (!(id in global.math)) throw 'El asunto ha terminado'
+  if (!m.quoted) return
+  if (m.quoted.sender != conn.user.jid) return
+  if (!/^Cuanto es el resultado de/i.test(m.quoted.text)) return
+  if (!(m.chat in global.math)) return conn.reply(m.chat, 'Esa pregunta ha terminado', m)
   if (m.quoted.id == global.math[id][0].id) {
   let math = global.math[id][1]
   if (m.text == math.result) {
@@ -12,10 +14,10 @@ let handler = async (m, { conn }) => {
     delete global.math[id]
   } else {
     if (--global.math[id][2] == 0) {
-      conn.reply(m.chat, `*La oportunidad se acabó!*\nJawaban: *${math.result}*`, m)
+      conn.reply(m.chat, `*Se acabo el tiempo!*\nRespuesta: *${math.result}*`, m)
       clearTimeout(global.math[id][3])
       delete global.math[id]
-    } else conn.reply(m.chat, `*Respuesta incorrecta!*\nTodavía hay ${global.math[id][2]} oportunidades`, m)
+    } else conn.reply(m.chat, `*Respuesta incorrecta!*\nAun disponible ${global.math[id][2]} oportunidad`, m)
   }
  }
 }

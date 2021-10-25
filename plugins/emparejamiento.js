@@ -13,9 +13,9 @@ function handler(m, { groupMetadata }) {
         }
     })
 }
-handler.help = ['jadian']
+handler.help = ['formarpareja']
 handler.tags = ['main']
-handler.command = ['jadian']
+handler.command = ['formarpareja']
 handler.group = true
 
 module.exports = handler

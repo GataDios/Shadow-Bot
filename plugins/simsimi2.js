@@ -11,9 +11,9 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
   conn.reply(m.chat, `${batch.success}`, m)
   }) .catch(() => { conn.reply(m.chat, `_¡La función simi es errónea! Perdón :(_`, m) })
 }
-handler.help = ['simi','s'].map(v => v + ' *text*')
+handler.help = ['simi2','s'].map(v => v + ' *text*')
 handler.tags = ['fun']
-handler.command = /^(simi|s)$/i
+handler.command = /^(simi2)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

@@ -42,11 +42,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
     let str = `
-Inventario *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*\n
-Dinero: *${money}*
-XP: *${exp}*\n
-Warn: *${warn}*
-Banned: *No*
+*_Billetera de_* *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*\n
+_Dinero:_ *${money}*
+_XP:_ *${exp}*
 `.trim()
     conn.reply(m.chat, str, m)
 }

@@ -8,11 +8,11 @@ let handler  = async (m, { conn, args, text }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('404 Not Found')
   conn.sendFile(m.chat, url, 'gimage', `
-*── 「 GOOGLE IMAGE 」 ──*
+*── 「 GOOGLE IMAGEN 」 ──*
 
 ${text}
-➸ *width*: ${width}
-➸ *height*: ${height}
+➸ *Ancho*: ${width}
+➸ *Altura*: ${height}
 `.trim(), m)
 }
 handler.help = ['gimage <query>', 'image <query>']

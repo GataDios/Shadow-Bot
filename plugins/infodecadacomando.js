@@ -130,21 +130,23 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 - *Envía una imagen de un personaje animado de la comunidad del anime*
 ° ඬ⃟👾 #apakah pregunta
 - *Te responde a la pregunta con alguna de las siguientes respuestas: 'Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'*
+° ඬ⃟👾 #blackpink
+- *Envia una imagen random de este grupo de K-pop
 
 *<COMANDOS +18/>*
 - Usar bajo su respondabilidad
 
-° ඬ⃟🔞 #Image Hentai sin censura
-° ඬ⃟🔞 #Image Hentai
-° ඬ⃟🔞 #gimage Hentai
-° ඬ⃟🔞 #image yaoi
-° ඬ⃟🔞 #Image loli
-° ඬ⃟🔞 #Image Porno
-° ඬ⃟🔞 #Image Tetas
-° ඬ⃟🔞 #Image chico desnudo
-° ඬ⃟🔞 #Image Pene
-° ඬ⃟🔞 #Image XXX
-° ඬ⃟🔞 #Image Teen desnuda
+° ඬ⃟🔞 _#lesbian_
+° ඬ⃟🔞 _#porno_
+° ඬ⃟🔞 _#gimage Hentai_
+° ඬ⃟🔞 _#image yaoi_
+° ඬ⃟🔞 _#Image loli_
+° ඬ⃟🔞 _#Image Porno_
+° ඬ⃟🔞 _#Image Tetas_
+° ඬ⃟🔞 _#Image chico desnudo_
+° ඬ⃟🔞 _#Image Pene_
+° ඬ⃟🔞 _#Image XXX_
+° ඬ⃟🔞 _#Image Teen desnuda_
 - Si la imagen se envía en formato de archivo reintentar nuevamente
 
 *<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*

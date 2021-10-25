@@ -50,9 +50,9 @@ Banned: *No*
 `.trim()
     conn.reply(m.chat, str, m)
 }
-handler.help = ['inventory', 'inv']
+handler.help = ['inventory', 'billetera']
 handler.tags = ['rpg']
-handler.command = /^(inv(entory)?|bal|level(ing)?|money|e?xp)$/i
+handler.command = /^(billetera(entory)?|bal|level(ing)?|money|e?xp)$/i
 module.exports = handler
 
 const more = String.fromCharCode(8206)

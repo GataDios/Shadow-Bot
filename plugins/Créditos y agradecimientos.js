@@ -1,7 +1,7 @@
 let handler = async m => m.reply(`
 *_「 THE SHADOW BROKERS - BOT 」_*
 
-Base: https://github.com/BochilGaming/games-wabot
+GitHub base: https://github.com/BochilGaming/games-wabot
 
 GitHub editada: https://github.com/TheShadowBrokers1/games-wabot
 
@@ -14,6 +14,8 @@ Agradecemos a Estefanía y a Maximiliano por ser moderadores del Bot
 Agradecemos a todos los usuarios activos del Bot
 
 Agradecemos a todas las personas que intervinieron en la edicion o aprobacion del Bot y sus comandos
+
+Agradecemos a Confu y Samu que son los dueños de los canales usados en el tutorial
 
 *_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*
 `.trim()) // Tambah sendiri kalo mau

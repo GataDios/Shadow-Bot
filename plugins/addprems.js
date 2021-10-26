@@ -14,6 +14,7 @@ let who
 handler.help = ['addprems <nomor>']
 handler.tags = ['owner']
 handler.command = /^addprems$/i
-handler.rowner = true
+handler.rowner = false
+handler.private = true
 
 module.exports = handler

@@ -20,12 +20,12 @@ let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
 ├‣ Nombre: ${title}
 ┴
 ┬
-├‣ Tamaño: ${filesizeF}
+├‣ 📂Tamaño: ${filesizeF}
 ┴
 ┬
 ├‣ Fuente: ${vid.url}
 ┴
-*${isLimit ? 'Usar ': ''}Link:* ${dl_link}
+*${isLimit ? 'Usar ': ''}📥Link de descarga (Usar si el Bot no manda la musica/video):* ${dl_link}
 `.trim(), m)
           if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
 ❒═════❬ PLAY2 ❭═════╾❒
@@ -33,7 +33,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner, DevMode }) => {
 ├‣ Nombre: ${title}
 ┴
 ┬
-├‣ Tamaño: ${filesizeF}
+├‣ 📂Tamaño: ${filesizeF}
 ┴
 ┬
 ├‣ Fuente: ${vid.url}

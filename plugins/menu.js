@@ -156,9 +156,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu2', 'help2', '?2']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(menu2|help2|\?2)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -169,7 +169,7 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 3
+handler.exp = 50
 
 module.exports = handler
 

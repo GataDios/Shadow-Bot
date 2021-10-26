@@ -191,17 +191,10 @@ Prefijo del Bot: MULTI-PREFIJO
 
 「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['menu', 'help', '?']
-handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
+handler.help = ['menu']
+handler.tags = ['info']
+handler.command = /^menu|help|?|$/i
 
-handler.admin = false
-handler.botAdmin = false
-
+module.exports = handler
 handler.fail = null
 handler.exp = 50

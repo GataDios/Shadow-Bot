@@ -5,7 +5,7 @@ let les = await axios.get('https://meme-api.herokuapp.com/gimme/kpop')
   }
 handler.help = ['randomkpop']
 handler.tags = ['images']
-handler.command = /^(lesbian)$/i
+handler.command = /^(randomkpop)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

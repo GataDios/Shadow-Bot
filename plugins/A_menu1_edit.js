@@ -193,7 +193,7 @@ Prefijo del Bot: MULTI-PREFIJO
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['menu']
 handler.tags = ['info']
-handler.command = /^menu|help|?|$/i
+handler.command = /^menu$/i
 
 module.exports = handler
 handler.fail = null

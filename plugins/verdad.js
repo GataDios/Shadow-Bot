@@ -1,5 +1,5 @@
 let handler  = async (m, { conn }) => {
-  conn.reply(m.chat,`“${pickRandom(global.bucin)}”`, m)
+  conn.reply(m.chat,`“${pickRandom(global.verdad)}”`, m)
 }
 handler.help = ['verdad']
 handler.tags = ['games']
@@ -22,7 +22,7 @@ function pickRandom(list) {
 }
 
 // https://jalantikus.com/tips/kata-kata-bucin/
-global.bucin = [
+global.verdad = [
 "¿Alguna vez te ha gustado alguien? ¿Cuánto tiempo?",
   "Si es posible o si quieres, en gc / fuera de gc, ¿con quién harás amistad? (Puede ser diferente / del mismo tipo)",
   "¿cual es tu mas grande miedo?",

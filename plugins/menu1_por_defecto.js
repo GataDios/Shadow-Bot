@@ -31,7 +31,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*_「 THE SHADOW BROKERS - BOT 」_*
+**_「 THE SHADOW BROKERS - BOT 」_*
 
 *Información del Bot*
 _- Propietario: Bruno sobrino_ 
@@ -97,6 +97,7 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟💎 _#linkgroup_
 ° ඬ⃟💎 _#hidetag *texto*_
 ° ඬ⃟💎 _#Setname *Nuevo nombre del grupo*_
+° ඬ⃟💎 _#tagall_
 
 *<CREADORES/>*
 
@@ -127,8 +128,11 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟👾 _#apakah *pregunta*_
 ° ඬ⃟👾 _#blackpink_
 ° ඬ⃟👾 _#reto_
+° ඬ⃟👾 _#verdad_
 ° ඬ⃟👾 _#imagenrandom_
 ° ඬ⃟👾 _#randomkpop_
+° ඬ⃟👾 _#neko_
+° ඬ⃟👾 _#iqtest_
 
 *<COMANDOS +18/>*
 ​​​
@@ -179,6 +183,7 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟🐺 _#Calc *expresión matemática*_ 
 ° ඬ⃟🐺 _#Zodiac *AAAA MM DD*_
 ° ඬ⃟🐺 _#Scan *numero con prefijo del pais*_
+° ඬ⃟🐺 _#Kpop_
 
 *<CHAT ANONIMO/>*
 
@@ -209,7 +214,7 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟🤖 _#enable autoread*_
 ° ඬ⃟🤖 _#disable autoread_
 ° ඬ⃟🤖 _#enable autoread_
-° ඬ⃟🤖 _#addprems *@tag*_
+° ඬ⃟🤖 _#addprems_
 ° ඬ⃟🤖 _#resetlimit_
 ° ඬ⃟🤖 _#banlist_
 ° ඬ⃟🤖 _#bcgc *texto*_
@@ -224,6 +229,7 @@ Prefijo del Bot: MULTI-PREFIJO
 *_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*
 
 *IGNORAR LO SIGUIENTE*
+
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',

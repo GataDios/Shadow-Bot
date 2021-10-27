@@ -1,9 +1,9 @@
 let handler = async m => m.reply(`
 *_「 THE SHADOW BROKERS - BOT 」_*
 
-GitHub base: https://github.com/BochilGaming/games-wabot
+GitHub base: https://github.com/BochilGaming/Games-wabot
 
-GitHub editada: https://github.com/TheShadowBrokers1/games-wabot
+GitHub editada: https://github.com/TheShadowBrokers1/Games-wabot
 
 Créditos del diseño del menu: 💮Oreki-san💮
 Numero: +51 936 366 761

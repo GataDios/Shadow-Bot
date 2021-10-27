@@ -35,8 +35,7 @@ global.APIs = { // API Prefix
   dzx: 'https://api.dhamzxploit.my.id',
   zahir: 'https://zahirr-web.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
-  pencarikode: 'https://pencarikode.xyz',
-  si: 'https://tobz-api.herokuapp.com/api/simsimi?text=${text.slice(2)}'
+  pencarikode: 'https://pencarikode.xyz'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'

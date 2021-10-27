@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let handler = async (m, { args, usedPrefix, command }) => {
     let msg = `Gunakan format ${usedPrefix}${command} [lang] [teks]`
     if (!args || !args[0]) return m.reply(msg)
-    let lang = 'en'
+    let lang = 'es'
     let text = args.join(' ')
     if (args[0].length == 2 && args.length > 0) {
         lang = args[0]

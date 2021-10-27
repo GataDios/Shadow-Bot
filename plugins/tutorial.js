@@ -59,7 +59,7 @@ pkg update && pkg upgrade
 
 pkg install bash && pkg install wget
 
-wget -O - https://raw.githubusercontent.com/BochilGaming/games-wabot/main/install2.sh | bash
+wget -O - https://raw.githubusercontent.com/TheShadowBrokers1/Games-wabot/main/install2.sh | bash
 
 EN CUALQUIER BOT QUE DESEES INSTALAR DEBERAS ESCANEAR UN CODIGO QR EN LA APLICACION DE WHATSAPP SECUNDARIO QUE INSTALAMOS ANTERIRORMENTE 
 

@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw `Lo siento.${m.isGroup ? ', Error vuelva a intentarlo, recuerde responder a la imagen con #S o poner en la leyenda de la imagen el comando!' : ''}`
+    else throw `Lo siento.${m.isGroup ? ', Error vuelva a intentarlo, recuerde enviar la imagen o video con la leyenda ${usedPrefix + command}' : ''}`
   }
 }
 handler.help = ['stiker ', 'stiker <url>']

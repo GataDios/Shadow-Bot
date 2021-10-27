@@ -31,199 +31,25 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*_「 THE SHADOW BROKERS - BOT 」_*
-
-*Información del Bot*
-_- Propietario: Bruno sobrino_ 
-_- Numero del propietario: +1 (952) 522-0880_
-_- Link directo: https://api.whatsapp.com/send?phone=19525220880_
-_Moderadora 1:_ Estefanía Gutierrez 
-_Moderador 2:_ Maximiliano de la cruz 
- 
-*_Reglas e información sobre el Bot: https://the-shadow-brokers-bot-info.blogspot.com/2021/10/the-shadow-brokers-bot.html_*
-*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN ESE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
-
-_Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ_
-
-Prefijo del Bot: MULTI-PREFIJO
-(#, $, ?, !, /, .)
-
-*<OTROS MENUS>*
-
-° ඬ⃟ℹ️ _#Infodecadacomando_
-° ඬ⃟ℹ️ _#reglasdelbot_
-° ඬ⃟ℹ️ _#creditosyagradecimientos_
-
-   *<JUEGOS/>*
-
-° ඬ⃟🕹 _#howgay *@tag / nombre*_
-° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
-° ඬ⃟🕹 _#Formarpareja_
-° ඬ⃟🕹 _#slots *cantidad*_
-
-*<ECONOMIA/>* 
-
-° ඬ⃟💵 _#monthly_
-° ඬ⃟💵 _#Claim_
-° ඬ⃟💵 _#weekly_
-° ඬ⃟💵 _#billetera_
-
-   *<DESCARGAS/>*
-
-° ඬ⃟📥 _#google  *texto*_
-° ඬ⃟📥 _#googlef *texto*_
-° ඬ⃟📥 _#image  *texto*_
-° ඬ⃟📥 _#gimage  *texto*_
-° ඬ⃟📥 _#ytsearch  *texto*_
-° ඬ⃟📥 _#ytmp4  *link yt*_
-° ඬ⃟📥 _#ytmp3  *link yt*_
-° ඬ⃟📥 _#play  *titulo*_
-° ඬ⃟📥 _#play2  *titulo del video*_
-° ඬ⃟📥 _#lirik  *nombredelacanción*_
- 
-*<GESTION DE GRUPOS/>* 
-
-° ඬ⃟💎 _#admin *@tag*_
-° ඬ⃟💎 _#kick *@tag*_
-° ඬ⃟💎 _#add  *número*_
-° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#Enable welcome_
-° ඬ⃟💎 _#Disable welcome_
-° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#listonline_
-° ඬ⃟💎 _#enable antilink_
-° ඬ⃟💎 _#disable antilink_ 
-° ඬ⃟💎 _#link_
-° ඬ⃟💎 _#linkgroup_
-° ඬ⃟💎 _#hidetag *texto*_
-° ඬ⃟💎 _#Setname *Nuevo nombre del grupo*_
-
-*<CREADORES/>*
-
-° ඬ⃟🧧 _#Style *texto*_
-° ඬ⃟🧧 _#ytcomment *texto*_
-° ඬ⃟🧧 _#hornycard *texto*_
-° ඬ⃟🧧 _#S_
-° ඬ⃟🧧 _#sticker*_
-° ඬ⃟🧧 _#swm *Link de la imagen*_
-° ඬ⃟🧧 _#ttp *texto*_
-° ඬ⃟🧧 _#attp *texto*_
-° ඬ⃟🧧 _#attp2 *texto*_
-° ඬ⃟🧧 _#wasted_
-° ඬ⃟🧧 _#rainbow_
-° ඬ⃟🧧 _#circle_
-° ඬ⃟🧧 _#tomp3_
-° ඬ⃟🧧 _#toimg_
-
-*<RANDOM/>*
-
-° ඬ⃟👾 _#meme_
-° ඬ⃟👾 _#meme2_
-° ඬ⃟👾 _#meme3_
-° ඬ⃟👾 _#cat_
-° ඬ⃟👾 _#dog_
-° ඬ⃟👾 _#pikachu_
-° ඬ⃟👾 _#waifu_
-° ඬ⃟👾 _#apakah *pregunta*_
-° ඬ⃟👾 _#blackpink_
-° ඬ⃟👾 _#reto_
-° ඬ⃟👾 _#imagenrandom_
-° ඬ⃟👾 _#randomkpop_
-
-*<COMANDOS +18/>*
-​​​
-° ඬ⃟🔞 _#Image Hentai sin censura_
-° ඬ⃟🔞 _#Image Hentai_
-° ඬ⃟🔞 _#gimage Hentai_
-° ඬ⃟🔞 _#image yaoi_
-° ඬ⃟🔞 _#Image loli_
-° ඬ⃟🔞 _#Image Porno_
-° ඬ⃟🔞 _#Image Tetas_
-° ඬ⃟🔞 _#Image chico desnudo_
-° ඬ⃟🔞 _#Image Pene_
-° ඬ⃟🔞 _#Image XXX_
-° ඬ⃟🔞 _#Image Teen desnuda_
-*- Si la imagen se envía en formato de archivo reintentar nuevamente*
-
-*<COMANDOS +18/>*
-- Usuarios premium 
-​​​
-° ඬ⃟🔞 _#lesbian_
-° ඬ⃟🔞 _#porno_
-° ඬ⃟🔞 _#randomnsfw_
-° ඬ⃟🔞 _#pornogif_
-° ඬ⃟🔞 _#hentai_
-
-*<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*
-​​​
-° ඬ⃟🎤 _#bass_
-° ඬ⃟🎤 _#deep_
-° ඬ⃟🎤 _#earrape_
-° ඬ⃟🎤 _#fast_
-° ඬ⃟🎤 _#fat_
-° ඬ⃟🎤 _#nightcore_
-° ඬ⃟🎤 _#reverse_
-° ඬ⃟🎤 _#robot_
-° ඬ⃟🎤 _#slow_
-° ඬ⃟🎤 _#smooth_
-
-*<EXTRAS/>*
-
-° ඬ⃟🐺 _#Join *link del grupo*_
-° ඬ⃟🐺 _#daftar *nombre.edad*_
-° ඬ⃟🐺 _#profile_
-° ඬ⃟🐺 _#Simih *texto*_
-° ඬ⃟🐺 _#afk *motivo*_
-° ඬ⃟🐺 _#readmore *texto1| texto2*_
-° ඬ⃟🐺 _#qr *texto*_
-° ඬ⃟🐺 _#Calc *expresión matemática*_ 
-° ඬ⃟🐺 _#Zodiac *AAAA MM DD*_
-° ඬ⃟🐺 _#Scan *numero con prefijo del pais*_
-
-*<CHAT ANONIMO/>*
-
-° ඬ⃟📳 _#start_
-° ඬ⃟📳 _#next_
-° ඬ⃟📳 _#leave_
-
-*<CONVIERTETE EN BOT/>*
-
-° ඬ⃟🏷 _#stop_
-° ඬ⃟🏷 _#jadibot_
-
-*<CREA TU NUMERO VIRTUAL E INSTALA UN BOT EN EL/>*
-
-° ඬ⃟🔥 _#Tutorial_
-
-*<NOTAS/>*
-
-° Manda mensaje al propietario del Bot para solicitar el comando para agregarte a usuarios *_PREMIUM_*
-- *El mensaje deber decir lo siguiente: Hola, me podrías decir el comando para agregarme a usuarios PREMIUM*
-
-*<PROPIETARIO Y MODERADORES/>*
-
-° ඬ⃟🤖 _#banuser *@tag*_
-° ඬ⃟🤖 _#banchat_
-° ඬ⃟🤖 _#setmenu_
-° ඬ⃟🤖 _#enable restrict_
-° ඬ⃟🤖 _#enable autoread*_
-° ඬ⃟🤖 _#disable autoread_
-° ඬ⃟🤖 _#enable autoread_
-° ඬ⃟🤖 _#addprems *@tag*_
-° ඬ⃟🤖 _#resetlimit_
-° ඬ⃟🤖 _#banlist_
-° ඬ⃟🤖 _#bcgc *texto*_
-° ඬ⃟🤖 _#bc *texto*_
-° ඬ⃟🤖 _#update_
-° ඬ⃟🤖 _#restart_
-° ඬ⃟🤖 _#backup_
-° ඬ⃟🤖 _#unbanchat_
-° ඬ⃟🤖 _#unban *@tag*_
-° ඬ⃟🤖 _#del_
-
-*_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*
-
-*IGNORAR LO SIGUIENTE*
+╭─「 %me 」
+│ ${ucapan()}, %name!
+│
+│ El Bot se esta inciando
+│
+│ En proceso de cambio 
+│ de menu
+│ 
+│ Si te llego este 
+│ menu.. ignoralo 
+│
+│ Si el Bot es de clonacion 
+│ O sea #jadibot configura
+│ el munu con #setmenu
+│ (Unicamente el dueño 
+│ del numero con el que 
+│ se dio de alta al Bot
+│
+╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',

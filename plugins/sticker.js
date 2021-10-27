@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
       let img = await q.download()
-      if (!img) throw `balas gambar/video/stiker dengan perintah ${usedPrefix + command}`
+      if (!img) throw `Error vuelva a intentarlo, recuerde responder al video o imagen con ${usedPrefix + command}`
       let out
       try {
         if (/webp/g.test(mime)) out = await webp2png(img)
@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-      else return m.reply('URL tidak valid!')
+      else return m.reply('URL invalida, recuerde insertar un link de imagen de google terminacion .jpg!')
     }
   } catch (e) {
     console.error(e)
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw `Gagal${m.isGroup ? ', balas gambarnya!' : ''}`
+    else throw `Gagal${m.isGroup ? ', Error vuelva a intentarlo, recuerde responder a la imagen con #S o poner en la leyenda de la imagen el comando!' : ''}`
   }
 }
 handler.help = ['stiker ', 'stiker <url>']

@@ -87,8 +87,8 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟💎 _#kick *@tag*_
 ° ඬ⃟💎 _#add  *número*_
 ° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#Enable welcome_
-° ඬ⃟💎 _#Disable welcome_
+° ඬ⃟💎 _#enable welcome_
+° ඬ⃟💎 _#disable welcome_
 ° ඬ⃟💎 _#group *open/close*_
 ° ඬ⃟💎 _#listonline_
 ° ඬ⃟💎 _#enable antilink_
@@ -96,8 +96,8 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟💎 _#link_
 ° ඬ⃟💎 _#linkgroup_
 ° ඬ⃟💎 _#hidetag *texto*_
-° ඬ⃟💎 _#Setname *Nuevo nombre del grupo*_
-° ඬ⃟💎 _#tagall_
+° ඬ⃟💎 _#setname *Nuevo nombre del grupo*_
+° ඬ⃟💎 _#invocar_
 
 *<CREADORES/>*
 
@@ -133,6 +133,8 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟👾 _#randomkpop_
 ° ඬ⃟👾 _#neko_
 ° ඬ⃟👾 _#iqtest_
+° ඬ⃟👾 _#nyan_
+
 
 *<COMANDOS +18/>*
 ​​​

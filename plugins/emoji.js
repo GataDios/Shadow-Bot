@@ -1,4 +1,4 @@
-const { sticker } = require('../lib/sticker')
+const { sticker } = require('../lib/sticker4')
 const fetch = require('node-fetch')
 const defaultType = 'whatsapp'
 let handler = async (m, { usedPrefix, conn, args, text }) => {

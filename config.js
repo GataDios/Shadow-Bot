@@ -28,7 +28,7 @@ global.Owner = {
     name: '.',
     isDev: true,
     isReport: true,
-    isMods: true,
+    isCreator: true
   },
   '19522137825': {} // ignore if you don't want anything, like name dll
 }

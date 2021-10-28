@@ -17,6 +17,7 @@ global.Owner = {
   '14506340736': {
     name: 'Estefania',
     isReport: true, // if true this number will send if user use command /report or /join
+    isMods: true, // if true this number will send if user use command /moderadores or /creator
   },
   '19179857596': {
     isReport: true

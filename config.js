@@ -15,12 +15,14 @@ global.Owner = {
     isCreator: true // if true this number will send if user use command /owner or /creator
   },
   '14506340736': {
-    name: 'Estefania',
+    name: 'Moderadora Estefania',
     isReport: true, // if true this number will send if user use command /report or /join
     isMods: true, // if true this number will send if user use command /moderadores or /creator
   },
   '19179857596': {
-    isReport: true
+    name: 'Moderador Maximiliano',
+    isReport: true,
+    isMods: true, // if true this number will send if user use command /moderadores or /creator
   },
   '19522137825': {} // ignore if you don't want anything, like name dll
 }

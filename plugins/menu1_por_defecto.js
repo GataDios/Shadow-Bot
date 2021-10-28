@@ -28,6 +28,9 @@ let tags = {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
+  }
+ let handler  = async (m, { conn }) => {
+ conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 }
 const defaultMenu = {
   before: `
@@ -308,11 +311,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
-       let handler  = async (m, { conn }) => {
-       conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-    })
-     }
-    })                                                                               
+    })                                                                             
     for (let plugin of help)
       if (plugin && 'tags' in plugin)
         for (let tag of plugin.tags)

@@ -33,23 +33,12 @@ const defaultMenu = {
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*
 
-*Información del Bot*
-_*- Propietario:* Bruno sobrino_ 
-_*- Numero del propietario:* +1 (952) 522-0880_
-_*- Link directo:* https://api.whatsapp.com/send?phone=19525220880_
-_*- Moderadora 1:* Estefanía Gutierrez_ 
-_*- Numero:* +1 (450) 634-0736_
-_*- Moderador 2:* Maximiliano de la cruz_ 
-_*- Numero:* ---------_
- 
+*INFORMACIÓN DEL BOT*
+*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN EL SIGUIENTE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
 *_Reglas e información sobre el Bot: https://the-shadow-brokers-bot-info.blogspot.com/2021/10/the-shadow-brokers-bot.html_*
-*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN ESE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
 
 _Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ_
 _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de comandos nuevos, etc_
-
-~_Prefijo del Bot: MULTI-PREFIJO_~
-_(#, $, ?, !, /, .)_
 
 *<OTROS MENUS>*
 
@@ -57,11 +46,17 @@ _(#, $, ?, !, /, .)_
 ° ඬ⃟ℹ️ _#reglasdelbot_
 ° ඬ⃟ℹ️ _#creditosyagradecimientos_
 
+*<NUMERO DEL CREADOR Y DE MODERADORES>*
+
+° ඬ⃟👻 _#owner_
+° ඬ⃟👻 _#creator_
+° ඬ⃟👻 _#moderadores_
+
 *<JUEGOS/>*
 
-° ඬ⃟🕹 _#howgay *@tag / nombre*_
-° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
-° ඬ⃟🕹 _#Formarpareja_
+° ඬ⃟🕹 _#gay *@tag / nombre*_
+° ඬ⃟🕹 _#lesbi *@tag / nombre*_
+° ඬ⃟🕹 _#formarpareja_
 ° ඬ⃟🕹 _#slots *cantidad*_
 
 *<ECONOMIA/>* 

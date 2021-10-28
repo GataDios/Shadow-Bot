@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let { Presence } = require('@adiwajshing/baileys')
-let { sticker } = require('../lib/sticker')
+let { sticker } = require('../lib/sticker3')
 let handler = async (m, { conn, text }) => {
    if (!text) throw 'Masukan pencarian, Contoh *#stickerwa pentol*'
  
@@ -13,7 +13,7 @@ conn.sendMessage(m.chat, await sticker(false, i, packname, author), 'stickerMess
 handler.help = ['stickerwa'].map(v => v + ' <teks>')
 handler.tags = ['premium']
 handler.command = /^stickerwa|stikerwa$/i
-handler.premium = true
-handler.limit = true
+handler.premium = false
+handler.limit = false
 
 module.exports = handler

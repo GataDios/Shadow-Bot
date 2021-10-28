@@ -92,9 +92,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     console.log(e)
   }
 }
-handler.help = ['stickergif', 'sgif', 'sticker2', 'nobg']
+handler.help = ['sgif2']
 handler.tags = ['sticker']
-handler.command = /^(stiker2|sticker2|s2|sgif2|stickergif2|stikergif2)$/i
+handler.command = /^(sgif2)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

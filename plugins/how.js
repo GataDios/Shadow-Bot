@@ -10,7 +10,7 @@ let handler = async (m, { conn, command, text }) => {
 }
 handler.help = ['gay', 'lesbi'].map(v => 'how' + v + ' siapa?')
 handler.tags = ['kerang']
-handler.command = /^how(gay|lesbi)/i
+handler.command = /^(gay|lesbi)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

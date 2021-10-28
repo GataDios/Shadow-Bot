@@ -52,6 +52,11 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 ° ඬ⃟👻 _#creator_
 ° ඬ⃟👻 _#moderadores_
 
+*<REPORTA FALLOS EN ALGÚN COMANDO/>*
+
+° ඬ⃟🔰 _#bug *texto*_
+° ඬ⃟🔰 _#report *texto*_
+
 *<JUEGOS/>*
 
 ° ඬ⃟🕹 _#gay *@tag / nombre*_

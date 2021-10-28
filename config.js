@@ -34,7 +34,7 @@ global.Owner = {
   '19522137825': {} // ignore if you don't want anything, like name dll
 }
 global.mods = ['19522137825'] // Want some help?
-global.prems = ['5219996125657'] // Premium user has unlimited limit
+global.prems = [''] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',

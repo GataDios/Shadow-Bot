@@ -355,6 +355,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
+  let handler  = async (m, { conn }) => {
+       conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
+ }
+
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']

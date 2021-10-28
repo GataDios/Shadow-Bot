@@ -308,7 +308,11 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
+       let handler  = async (m, { conn }) => {
+       conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
     })
+     }
+    })                                                                               
     for (let plugin of help)
       if (plugin && 'tags' in plugin)
         for (let tag of plugin.tags)
@@ -355,8 +359,6 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
-  let handler  = async (m, { conn }) => {
-       conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
  }
 
 }

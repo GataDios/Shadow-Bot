@@ -7,7 +7,7 @@ handler.before = function (m, { isAdmin, isBotAdmin }) {
   let isYoutubeLink = linkRegex.exec(m.text)
 
   if (chat.antiLink && isYoutubeLink) {
-    m.reply('Hapus!!\n\nLink YouTube terdeteksi')
+    m.reply('Eliminar!!\n\nEnlace de YouTube detectado')
     if (global.opts['restrict']) {
       if (isAdmin || !isBotAdmin) return true
       // this.groupRemove(m.chat, [m.sender])

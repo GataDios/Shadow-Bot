@@ -24,6 +24,11 @@ global.Owner = {
     isReport: true,
     isMods: true, // if true this number will send if user use command /moderadores or /creator
   },
+  '5219996125657': {
+    name: 'Bruno Sobrino',
+    isReport: true,
+    isDev: true, // if true this number will send if user use command /moderadores or /creator
+  },
   '19522137825': {} // ignore if you don't want anything, like name dll
 }
 global.mods = ['19522137825'] // Want some help?

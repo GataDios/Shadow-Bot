@@ -4,9 +4,9 @@ let handler = async (m, { conn, text }) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
     else who = m.chat
     if (!who) throw `Etiqueta a la persona!`
-    if (global.prems.includes(who.split`@`[0])) throw 'Él ya es premium!'
+    if (global.prems.includes(who.split`@`[0])) throw 'Él ya es usuario premium!'
     global.prems.push(`${who.split`@`[0]}`)
-    conn.reply(m.chat, `@${who.split`@`[0]} ahora premium!`, m, {
+    conn.reply(m.chat, `@${who.split`@`[0]} ahora es un usuario premium!`, m, {
         contextInfo: {
             mentionedJid: [who]
         }

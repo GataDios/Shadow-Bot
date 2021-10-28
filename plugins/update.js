@@ -11,6 +11,7 @@ handler.tags = ['host']
 handler.command = /^update$/i
 handler.owner = true
 handler.mods = false
+handler.creator = true
 handler.update = true
 handler.premium = false
 handler.group = false

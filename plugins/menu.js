@@ -258,10 +258,7 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 *%npmname@^%version*
 ${'```%npmdesc```'}
 `,
-}
-let handler  = async (m, { conn }) => {
- conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-   })
+  }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))

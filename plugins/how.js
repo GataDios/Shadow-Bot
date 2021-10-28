@@ -1,7 +1,6 @@
 let handler = async (m, { conn, command, text }) => {
   if (!text) throw `Quién es *${command.replace('how', '').toUpperCase()}*`
   conn.reply(m.chat, `
-${command} *${text}*
 *${text}* es 🏳️‍🌈 *${Math.floor(Math.random() * 101)}*% ${command.replace('how', '').toUpperCase()}
 `.trim(), m, m.mentionedJid ? {
     contextInfo: {
@@ -9,9 +8,9 @@ ${command} *${text}*
     }
   } : {})
 }
-handler.help = ['gay', 'pintar', 'cantik', 'ganteng', 'gabut', 'gila', 'lesbi', 'stress', 'bucin', 'jones', 'sadboy'].map(v => 'how' + v + ' siapa?')
+handler.help = ['gay', 'lesbi'].map(v => 'how' + v + ' siapa?')
 handler.tags = ['kerang']
-handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy)/i
+handler.command = /^how(gay|lesbi)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

@@ -5,6 +5,3 @@ handler.command = /^(buenosdias2)$/i
 handler.fail = null
 handler.exp = 100
 module.exports = handler
-© 2021 GitHub, Inc.
-Terms
-Privacy

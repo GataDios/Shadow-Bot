@@ -5,14 +5,14 @@ let ara = fs.readFileSync('./audio/Ara.mp3')
 conn.sendMessage(m.chat, ara, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
 }
 
-handler.customPrefix = ['araara'] 
+handler.customPrefix = ['araaudio'] 
 handler.tags = ['audio'] 
-handler.command = /^(araara)$/i
+handler.command = /^(araaudio)$/i
 
 handler.owner = false
 handler.mods = false 
 handler.premium = false
-handler.group = false 
-handler.private = false
+handler.group = true 
+handler.private = true
 
 module.exports = handler

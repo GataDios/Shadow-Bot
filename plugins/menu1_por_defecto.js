@@ -261,10 +261,6 @@ ${'```%npmdesc```'}
 }
 let handler  = async (m, { conn }) => {
  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-   
-handler.help = ['menu', 'help', '?']
-handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
    })
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {

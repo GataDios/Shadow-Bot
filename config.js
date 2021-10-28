@@ -18,7 +18,8 @@ global.Owner = {
     name: '.',
     isDev: true,
     isReport: true,
-    isCreator: true
+    isCreator: true,
+    isUpdate: true
   },
   '14506340736': {
     name: 'Moderadora Estefania',

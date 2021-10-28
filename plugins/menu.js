@@ -31,222 +31,222 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*_「 THE SHADOW BROKERS - BOT 」_*
+「 THE SHADOW BROKERS - BOT 」
 
-*INFORMACIÓN DEL BOT*
-*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN EL SIGUIENTE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
-*_Reglas e información sobre el Bot: https://the-shadow-brokers-bot-info.blogspot.com/2021/10/the-shadow-brokers-bot.html_*
+INFORMACIÓN DEL BOT
+⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN EL SIGUIENTE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️
+Reglas e información sobre el Bot: https://n9.cl/the-shadow-brokers-bot-html
 
-_Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ_
-_- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de comandos nuevos, etc_
+Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
+- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de comandos nuevos, etc
 
-*<OTROS MENUS>*
+<OTROS MENUS>
 
-° ඬ⃟ℹ️ _#Infodecadacomando_
-° ඬ⃟ℹ️ _#reglasdelbot_
-° ඬ⃟ℹ️ _#creditosyagradecimientos_
+° ඬ⃟ℹ️ #Infodecadacomando
+° ඬ⃟ℹ️ #reglasdelbot
+° ඬ⃟ℹ️ #creditosyagradecimientos
 
-*<NUMERO DEL CREADOR Y DE MODERADORES>*
+<NUMERO DEL CREADOR Y DE MODERADORES>
 
-° ඬ⃟👻 _#owner_
-° ඬ⃟👻 _#creator_
-° ඬ⃟👻 _#moderadores_
+° ඬ⃟👻 #owner
+° ඬ⃟👻 #creator
+° ඬ⃟👻 #moderadores
 
-*<REPORTA FALLOS EN ALGÚN COMANDO/>*
+<REPORTA FALLOS EN ALGÚN COMANDO/>
 
-° ඬ⃟🔰 _#bug *texto*_
-° ඬ⃟🔰 _#report *texto*_
+° ඬ⃟🔰 #bug texto
+° ඬ⃟🔰 #report texto
 
-*<JUEGOS/>*
+<JUEGOS/>
 
-° ඬ⃟🕹 _#gay *@tag / nombre*_
-° ඬ⃟🕹 _#lesbi *@tag / nombre*_
-° ඬ⃟🕹 _#formarpareja_
-° ඬ⃟🕹 _#slots *cantidad*_
+° ඬ⃟🕹 #gay @tag / nombre
+° ඬ⃟🕹 #lesbi @tag / nombre
+° ඬ⃟🕹 #formarpareja
+° ඬ⃟🕹 #slots cantidad
 
-*<ECONOMIA/>* 
+<ECONOMIA/> 
 
-° ඬ⃟💵 _#monthly_
-° ඬ⃟💵 _#claim_
-° ඬ⃟💵 _#weekly_
-° ඬ⃟💵 _#billetera_
+° ඬ⃟💵 #monthly
+° ඬ⃟💵 #claim
+° ඬ⃟💵 #weekly
+° ඬ⃟💵 #billetera
 
-*<DESCARGAS/>*
+<DESCARGAS/>
 
-° ඬ⃟📥 _#google  *texto*_
-° ඬ⃟📥 _#googlef *texto*_
-° ඬ⃟📥 _#image  *texto*_
-° ඬ⃟📥 _#gimage  *texto*_
-° ඬ⃟📥 _#ytsearch  *texto*_
-° ඬ⃟📥 _#ytmp4  *link yt*_
-° ඬ⃟📥 _#ytmp3  *link yt*_
-° ඬ⃟📥 _#play  *titulo*_
-° ඬ⃟📥 _#play2  *titulo del video*_
-° ඬ⃟📥 _#lirik  *nombredelacanción*_
+° ඬ⃟📥 #google  texto
+° ඬ⃟📥 #googlef texto
+° ඬ⃟📥 #image  texto
+° ඬ⃟📥 #gimage  texto
+° ඬ⃟📥 #ytsearch  texto
+° ඬ⃟📥 #ytmp4  link yt
+° ඬ⃟📥 #ytmp3  link yt
+° ඬ⃟📥 #play  titulo
+° ඬ⃟📥 #play2  titulo del video
+° ඬ⃟📥 #lirik  nombredelacanción
  
-*<GESTION DE GRUPOS/>* 
+<GESTION DE GRUPOS/> 
 
-° ඬ⃟💎 _#admin *@tag*_
-° ඬ⃟💎 _#kick *@tag*_
-° ඬ⃟💎 _#add  *número*_
-° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#enable welcome_
-° ඬ⃟💎 _#disable welcome_
-° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#listonline_
-° ඬ⃟💎 _#enable antilink_
-° ඬ⃟💎 _#disable antilink_ 
-° ඬ⃟💎 _#link_
-° ඬ⃟💎 _#linkgroup_
-° ඬ⃟💎 _#hidetag *texto*_
-° ඬ⃟💎 _#setname *Nuevo nombre del grupo*_
-° ඬ⃟💎 _#invocar_
+° ඬ⃟💎 #admin @tag
+° ඬ⃟💎 #kick @tag
+° ඬ⃟💎 #add  número
+° ඬ⃟💎 #group open/close
+° ඬ⃟💎 #enable welcome
+° ඬ⃟💎 #disable welcome
+° ඬ⃟💎 #group open/close
+° ඬ⃟💎 #listonline
+° ඬ⃟💎 #enable antilink
+° ඬ⃟💎 #disable antilink 
+° ඬ⃟💎 #link
+° ඬ⃟💎 #linkgroup
+° ඬ⃟💎 #hidetag texto
+° ඬ⃟💎 #setname Nuevo nombre del grupo
+° ඬ⃟💎 #invocar
 
-*<CREADORES/>*
+<CREADORES/>
 
-° ඬ⃟🧧 _#style *texto*_
-° ඬ⃟🧧 _#ytcomment *texto*_
-° ඬ⃟🧧 _#hornycard *texto*_
-° ඬ⃟🧧 _#s_
-° ඬ⃟🧧 _#sticker*_
-° ඬ⃟🧧 _#swm *Link de la imagen*_
-° ඬ⃟🧧 _#ttp *texto*_
-° ඬ⃟🧧 _#attp *texto*_
-° ඬ⃟🧧 _#attp2 *texto*_
-° ඬ⃟🧧 _#wasted_
-° ඬ⃟🧧 _#rainbow_
-° ඬ⃟🧧 _#circle_
-° ඬ⃟🧧 _#tomp3_
-° ඬ⃟🧧 _#toimg_
+° ඬ⃟🧧 #style texto
+° ඬ⃟🧧 #ytcomment texto
+° ඬ⃟🧧 #hornycard texto
+° ඬ⃟🧧 #s
+° ඬ⃟🧧 #sticker*
+° ඬ⃟🧧 #swm Link de la imagen
+° ඬ⃟🧧 #ttp texto
+° ඬ⃟🧧 #attp texto
+° ඬ⃟🧧 #attp2 texto
+° ඬ⃟🧧 #wasted
+° ඬ⃟🧧 #rainbow
+° ඬ⃟🧧 #circle
+° ඬ⃟🧧 #tomp3
+° ඬ⃟🧧 #toimg
 
-*<RANDOM/>*
+<RANDOM/>
 
-° ඬ⃟👾 _#meme_
-° ඬ⃟👾 _#meme2_
-° ඬ⃟👾 _#meme3_
-° ඬ⃟👾 _#cat_
-° ඬ⃟👾 _#dog_
-° ඬ⃟👾 _#pikachu_
-° ඬ⃟👾 _#waifu_
-° ඬ⃟👾 _#apakah *pregunta*_
-° ඬ⃟👾 _#blackpink_
-° ඬ⃟👾 _#reto_
-° ඬ⃟👾 _#verdad_
-° ඬ⃟👾 _#imagenrandom_
-° ඬ⃟👾 _#randomkpop_
-° ඬ⃟👾 _#neko_
-° ඬ⃟👾 _#iqtest_
-° ඬ⃟👾 _#nyan_
+° ඬ⃟👾 #meme
+° ඬ⃟👾 #meme2
+° ඬ⃟👾 #meme3
+° ඬ⃟👾 #cat
+° ඬ⃟👾 #dog
+° ඬ⃟👾 #pikachu
+° ඬ⃟👾 #waifu
+° ඬ⃟👾 #apakah pregunta
+° ඬ⃟👾 #blackpink
+° ඬ⃟👾 #reto
+° ඬ⃟👾 #verdad
+° ඬ⃟👾 #imagenrandom
+° ඬ⃟👾 #randomkpop
+° ඬ⃟👾 #neko
+° ඬ⃟👾 #iqtest
+° ඬ⃟👾 #nyan
 
 
-*<COMANDOS +18/>*
+<COMANDOS +18/>
 ​​​
-° ඬ⃟🔞 _#Image Hentai sin censura_
-° ඬ⃟🔞 _#Image Hentai_
-° ඬ⃟🔞 _#image yaoi_
-° ඬ⃟🔞 _#Image loli_
-° ඬ⃟🔞 _#Image Porno_
-° ඬ⃟🔞 _#Image Tetas_
-° ඬ⃟🔞 _#Image chico desnudo_
-° ඬ⃟🔞 _#Image Pene_
-° ඬ⃟🔞 _#Image XXX_
-° ඬ⃟🔞 _#Image Teen desnuda_
-*- Si la imagen se envía en formato de archivo reintentar nuevamente*
+° ඬ⃟🔞 #Image Hentai sin censura
+° ඬ⃟🔞 #Image Hentai
+° ඬ⃟🔞 #image yaoi
+° ඬ⃟🔞 #Image loli
+° ඬ⃟🔞 #Image Porno
+° ඬ⃟🔞 #Image Tetas
+° ඬ⃟🔞 #Image chico desnudo
+° ඬ⃟🔞 #Image Pene
+° ඬ⃟🔞 #Image XXX
+° ඬ⃟🔞 #Image Teen desnuda
+- Si la imagen se envía en formato de archivo reintentar nuevamente
 
-*<COMANDOS +18/>*
+<COMANDOS +18/>
 - Usuarios premium 
 ​​​
-° ඬ⃟🔞 _#lesbian_
-° ඬ⃟🔞 _#porno_
-° ඬ⃟🔞 _#randomnsfw_
-° ඬ⃟🔞 _#pornogif_
-° ඬ⃟🔞 _#hentai_
+° ඬ⃟🔞 #lesbian
+° ඬ⃟🔞 #porno
+° ඬ⃟🔞 #randomnsfw
+° ඬ⃟🔞 #pornogif
+° ඬ⃟🔞 #hentai
 
-*<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*
+<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>
 ​​​
-° ඬ⃟🎤 _#bass_
-° ඬ⃟🎤 _#deep_
-° ඬ⃟🎤 _#earrape_
-° ඬ⃟🎤 _#fast_
-° ඬ⃟🎤 _#fat_
-° ඬ⃟🎤 _#nightcore_
-° ඬ⃟🎤 _#reverse_
-° ඬ⃟🎤 _#robot_
-° ඬ⃟🎤 _#slow_
-° ඬ⃟🎤 _#smooth_
+° ඬ⃟🎤 #bass
+° ඬ⃟🎤 #deep
+° ඬ⃟🎤 #earrape
+° ඬ⃟🎤 #fast
+° ඬ⃟🎤 #fat
+° ඬ⃟🎤 #nightcore
+° ඬ⃟🎤 #reverse
+° ඬ⃟🎤 #robot
+° ඬ⃟🎤 #slow
+° ඬ⃟🎤 #smooth
 
-*<EXTRAS/>*
+<EXTRAS/>
 
-° ඬ⃟🐺 _#join *link del grupo*_
-° ඬ⃟🐺 _#daftar *nombre.edad*_
-° ඬ⃟🐺 _#profile_
-° ඬ⃟🐺 _#simih *texto*_
-° ඬ⃟🐺 _#afk *motivo*_
-° ඬ⃟🐺 _#readmore *texto1| texto2*_
-° ඬ⃟🐺 _#qr *texto*_
-° ඬ⃟🐺 _#calc *expresión matemática*_ 
-° ඬ⃟🐺 _#zodiac *AAAA MM DD*_
-° ඬ⃟🐺 _#scan *numero con prefijo del pais*_
-° ඬ⃟🐺 _#kpop_
+° ඬ⃟🐺 #join link del grupo
+° ඬ⃟🐺 #daftar nombre.edad
+° ඬ⃟🐺 #profile
+° ඬ⃟🐺 #simih texto
+° ඬ⃟🐺 #afk motivo
+° ඬ⃟🐺 #readmore texto1| texto2
+° ඬ⃟🐺 #qr texto
+° ඬ⃟🐺 #calc expresión matemática 
+° ඬ⃟🐺 #zodiac AAAA MM DD
+° ඬ⃟🐺 #scan numero con prefijo del pais
+° ඬ⃟🐺 #kpop
 
-*<AUDIOS/>* 
+<AUDIOS/> 
 
-° ඬ⃟🎧 _#buenosdias_
-° ඬ⃟🎧 _#buenosdias2_
-° ඬ⃟🎧 _#fiestadeladmin_
-° ඬ⃟🎧 _#fiestadeladmin2_
-° ඬ⃟🎧 _#viernes_
-° ඬ⃟🎧 _#chicalgante_
-° ඬ⃟🎧 _#baneado_
-° ඬ⃟🎧 _#anadieleimporta_
-° ඬ⃟🎧 _#horadesexo_
-° ඬ⃟🎧 _#vetealavrg_
-° ඬ⃟🎧 _#hola_
-° ඬ⃟🎧 _#teamo_
-° ඬ⃟🎧 _#Yamete_
+° ඬ⃟🎧 #buenosdias
+° ඬ⃟🎧 #buenosdias2
+° ඬ⃟🎧 #fiestadeladmin
+° ඬ⃟🎧 #fiestadeladmin2
+° ඬ⃟🎧 #viernes
+° ඬ⃟🎧 #chicalgante
+° ඬ⃟🎧 #baneado
+° ඬ⃟🎧 #anadieleimporta
+° ඬ⃟🎧 #horadesexo
+° ඬ⃟🎧 #vetealavrg
+° ඬ⃟🎧 #hola
+° ඬ⃟🎧 #teamo
+° ඬ⃟🎧 #Yamete
 
-*<CHAT ANONIMO/>*
+<CHAT ANONIMO/>
 
-° ඬ⃟📳 _#start_
-° ඬ⃟📳 _#next_
-° ඬ⃟📳 _#leave_
+° ඬ⃟📳 #start
+° ඬ⃟📳 #next
+° ඬ⃟📳 #leave
 
-*<CONVIERTETE EN BOT/>*
+<CONVIERTETE EN BOT/>
 
-° ඬ⃟🏷 _#stop_
-° ඬ⃟🏷 _#jadibot_
+° ඬ⃟🏷 #stop
+° ඬ⃟🏷 #jadibot
 
-*<CREA TU NUMERO VIRTUAL E INSTALA UN BOT EN EL/>*
+<CREA TU NUMERO VIRTUAL E INSTALA UN BOT EN EL/>
 
-° ඬ⃟🔥 _#tutorial_
+° ඬ⃟🔥 #tutorial
 
-*<NOTAS/>*
+<NOTAS/>
 
-° Manda mensaje al propietario del Bot para solicitar el comando para agregarte a usuarios *_PREMIUM_*
-- *El mensaje deber decir lo siguiente: Hola, me podrías decir el comando para agregarme a usuarios PREMIUM*
+° Manda mensaje al propietario del Bot para solicitar el comando para agregarte a usuarios PREMIUM
+- El mensaje deber decir lo siguiente: Hola, me podrías decir el comando para agregarme a usuarios PREMIUM
 
-*<PROPIETARIO Y MODERADORES/>*
+<PROPIETARIO Y MODERADORES/>
 
-° ඬ⃟🤖 _#banuser *@tag*_
-° ඬ⃟🤖 _#banchat_
-° ඬ⃟🤖 _#setmenu_
-° ඬ⃟🤖 _#enable restrict_
-° ඬ⃟🤖 _#enable autoread*_
-° ඬ⃟🤖 _#disable autoread_
-° ඬ⃟🤖 _#enable autoread_
-° ඬ⃟🤖 _#addprem *@tag*_
-° ඬ⃟🤖 _#resetlimit_
-° ඬ⃟🤖 _#banlist_
-° ඬ⃟🤖 _#bcgc *texto*_
-° ඬ⃟🤖 _#bc *texto*_
-° ඬ⃟🤖 _#update_
-° ඬ⃟🤖 _#restart_
-° ඬ⃟🤖 _#backup_
-° ඬ⃟🤖 _#unbanchat_
-° ඬ⃟🤖 _#unban *@tag*_
-° ඬ⃟🤖 _#del_
+° ඬ⃟🤖 #banuser @tag
+° ඬ⃟🤖 #banchat
+° ඬ⃟🤖 #setmenu
+° ඬ⃟🤖 #enable restrict
+° ඬ⃟🤖 #enable autoread*
+° ඬ⃟🤖 #disable autoread
+° ඬ⃟🤖 #enable autoread
+° ඬ⃟🤖 #addprem @tag
+° ඬ⃟🤖 #resetlimit
+° ඬ⃟🤖 #banlist
+° ඬ⃟🤖 #bcgc texto
+° ඬ⃟🤖 #bc texto
+° ඬ⃟🤖 #update
+° ඬ⃟🤖 #restart
+° ඬ⃟🤖 #backup
+° ඬ⃟🤖 #unbanchat
+° ඬ⃟🤖 #unban @tag
+° ඬ⃟🤖 #del
 
-*_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*
+「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」
 
 *IGNORAR LO SIGUIENTE*
 
@@ -258,7 +258,7 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 *%npmname@^%version*
 ${'```%npmdesc```'}
 `,
-  }
+}
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
@@ -308,7 +308,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
-    })                                                                             
+    })
     for (let plugin of help)
       if (plugin && 'tags' in plugin)
         for (let tag of plugin.tags)
@@ -341,6 +341,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.user.name,
+      ucapan: ucapan(),
       npmname: package.name,
       npmdesc: package.description,
       version: package.version,
@@ -355,8 +356,6 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
- }
-
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
@@ -371,7 +370,7 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 50
+handler.exp = 3
 
 module.exports = handler
 

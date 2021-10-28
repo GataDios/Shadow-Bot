@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 const FormData = require('form-data')
 const { MessageType } = require('@adiwajshing/baileys')
-const { sticker } = require('../lib/sticker')
+const { sticker } = require('../lib/sticker3')
 
 let handler  = async (m, { conn, text }) => {
   pp = global.API('lol', '/api/attp', { text }, 'apikey')

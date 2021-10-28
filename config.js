@@ -26,6 +26,7 @@ global.Owner = {
   },
   '5219996125657': {
     name: '.',
+    isDev: true,
     isReport: true,
     isMods: true,
   },

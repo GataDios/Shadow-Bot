@@ -1,9 +1,9 @@
 /*
 
    [] INGIN BERTANYA TANYA???
-HUBUNGI => 6287834993722
+HUBUNGI => 19527773705
 [] ATAU SILAHKAN JOIN
-=> https://chat.whatsapp.com/ExvXgylW4LSIfGNGdg28xv
+=> https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
 
 [] SC ORI : NURUTOMO
 [] RECODE : RAKU
@@ -132,7 +132,7 @@ const jam = moment.tz('Asia/Jakarta').format('HH')
 const fgif = {
   key: {
     participant: `0@s.whatsapp.net`,
-    ...{from: { remoteJid: "6287834993722-1621306547@g.us" }},
+    ...{from: { remoteJid: "19527773705-1621306547@g.us" }},
   },
   message: {
     videoMessage: {
@@ -173,7 +173,7 @@ const ftextt = {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6287834993722-1621306547@g.us" } : {}) 
+	 { remoteJid: "19527773705-1621306547@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -193,7 +193,7 @@ const floc = {
 const fvideo = {
   key: {
     participant: `0@s.whatsapp.net`,
-    ...{from: { remoteJid: "6287834993722-1621306547@g.us" }},
+    ...{from: { remoteJid: "19527773705-1621306547@g.us" }},
   },
   message: {
     videoMessage: {
@@ -247,7 +247,7 @@ const freply = {key:{ fromMe:false, participant: `0@s.whatsapp.net`, ...(m.chat 
 
 						},
 
-						"businessOwnerJid": "6287834993722@s.whatsapp.net"}}}    
+						"businessOwnerJid": "19527773705@s.whatsapp.net"}}}    
 						
 let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let { exp, limit, level, role, age, money, registered, healt, coin, tigame } = global.DATABASE.data.users[m.sender]
@@ -686,7 +686,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = true
+handler.register = false
 
 handler.admin = false
 handler.botAdmin = false

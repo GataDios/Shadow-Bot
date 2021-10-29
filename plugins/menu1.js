@@ -519,9 +519,9 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
   }
 
 }
-handler.help = ['menu']
+handler.help = ['menu2']
 handler.tags = ['main']
-handler.command = ['menu']
+handler.command = ['menu2']
 handler.owner = false
 handler.mods = false
 handler.premium = false

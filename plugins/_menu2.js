@@ -678,21 +678,20 @@ Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
   }
 
 }
-handler.help = ['menu']
-handler.tags = ['info']
-handler.command = ['menu']
+handler.help = ['menu2', 'help', '?']
+handler.tags = ['main']
+handler.command = /^(menu2|help|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = false
 
 handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = false
+handler.exp = 3
 
 module.exports = handler
 

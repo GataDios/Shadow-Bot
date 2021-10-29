@@ -21,7 +21,6 @@ YT ZEROBOT
 */
 let fs = require ('fs')
 const { createHash } = require('crypto') 
-let util = require('util')
 let path = require('path')
 let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
@@ -33,7 +32,7 @@ let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 
 //========== BATASSS NGABBB ==========//
 
-let handler  = async (m, { conn, usedPrefix: _p, command, args }) => {
+let handler2  = async (m, { conn, usedPrefix: _p, command, args }) => {
 let neww = performance.now()
 let teks = `${args[0]}`.toLowerCase()
 const chats = conn.chats.all()
@@ -409,24 +408,6 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 ❏ Exp : ${petik} %exp ${petik} 
 ❏ Exp To Levelup : ${petik} %xp4levelup ${petik} 
 ❏ Total Exp : ${petik} %totalexp ${petik} 
-
-❏ Ｄａｔｅ ＆ Ｔｉｍｅ
-❏ Day : ${petik} %week ${petik} 
-❏ Date : ${petik} %date ${petik} 
-❏ Weton : ${petik} %weton ${petik} 
-❏ Tahun Baru : ${petik} ${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik Lagi ${petik}
-❏ Islamic Date : ${petik} ${dateIslamic} ${petik} 
-❏ Time : ${petik} %time WIB ${petik} 
-❏ Time : ${petik} ${wit} WIT ${petik} 
-❏ Time : ${petik} ${wita} WITA ${petik} 
-
-❏ Ｄａｔａ
-❏ Uptime : ${petik} %uptime ${petik} 
-❏ Main Uptime : ${petik} %muptime ${petik} 
-❏ Users In Database : ${petik} %totalreg Users ${petik} 
-❏ Registered : ${petik} %rtotalreg ${petik} 
-❏ Total GC : ${petik} %totalgc ${petik} 
-%readmore
 
 `
     let header = conn.menu.header || '༺ %category ༻'

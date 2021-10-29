@@ -231,8 +231,7 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+.
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -314,15 +313,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     ].join('\n')
     text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
     let replace = {
-      '%': '%',
-      p: _p, uptime, muptime,
-      me: conn.user.name,
-      npmname: package.name,
-      npmdesc: package.description,
-      version: package.version,
-      github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
-      name, weton, week, date, dateIslamic, time, totalreg, rtotalreg,
-      readmore: readMore
+         .
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let pp = await conn.getProfilePicture(conn.user.jid).catch(_ => path.join(__dirname, '../src/avatar_contact.png'))

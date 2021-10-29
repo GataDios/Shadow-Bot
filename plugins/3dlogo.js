@@ -10,9 +10,9 @@ buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${teks}`
 teslagod.sendMessage(from, buff, image, {quoted: mek})
 			     	break
 }
-handler.help = ['text3d'].map(v => v + ' <teks>')
+handler.help = ['text'].map(v => v + ' <teks>')
 handler.tags = ['sticker']
-handler.command = /^(text3d)$/i
+handler.command = /^(text)$/i
 handler.limit = false
 handler.register = false
 

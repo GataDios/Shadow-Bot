@@ -678,9 +678,9 @@ Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
   }
 
 }
-handler.help = ['menu2']
-handler.tags = ['main']
-handler.command = ['menu2']
+handler.help = ['menusecundario']
+handler.tags = ['info']
+handler.command = ['menusecundario']
 handler.owner = false
 handler.mods = false
 handler.premium = false

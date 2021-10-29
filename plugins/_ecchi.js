@@ -5,9 +5,9 @@ let Neko = new neko()
      json = (await axios.get('https://meme-api.herokuapp.com/gimme/ecchi')).data
    conn.sendFile(m.chat, json.url, 'ecchi.jpg', json.title, m, false)
 }
-handler.help = ['a']
+handler.help = ['ecchi']
 handler.tags = ['sange']
-handler.command = /^a$/i
+handler.command = /^(ecchi)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

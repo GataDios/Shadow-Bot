@@ -9,7 +9,6 @@ if (teks.length > 10) return teslagod.sendMessage(from, '[ ! ] 10 digitos maximo
 buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${teks}`, {method: 'get'})
 teslagod.sendMessage(from, buff, image, {quoted: mek})
 			     	break
-}
 handler.help = ['text'].map(v => v + ' <teks>')
 handler.tags = ['sticker']
 handler.command = /^(text)$/i

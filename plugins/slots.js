@@ -60,7 +60,7 @@ ${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '�
             WinOrLose = 'UN POCO MÁS!!'
         } else {
              Hadiah = `-${count * 1}`
-             WinOrLose = 'TÚ HAZ PIERDES'
+             WinOrLose = 'TÚ PIERDES'
         } 
         conn.reply(m.chat, `
        *🎰VIRTUAL SLOTS🎰*

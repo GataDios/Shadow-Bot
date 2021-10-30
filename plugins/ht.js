@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
   m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
   try {
     let img = await ht(text ? text : ':v')
-    conn.sendFile(m.chat, img, 'Harta Tahta.png', '*© Nurutomo*\nMade with FFmpeg', m)
+    conn.sendFile(m.chat, img, 'Feliz Cumpleaños.png', '*© The Shadow Brokers - Bot*', m)
     setTimeout(() => {
       fs.unlinkSync(img)
     }, 5000);
@@ -41,8 +41,8 @@ function ht(text = '') {
     let format = ',format=rgb24'
     let layers = [
       `[v:0]scale=${s}${format}[im]`,
-      textArgs('HARTA', 'black', 'white', fsize, font, '(w-text_w)/2', `(h-text_h)/2-(text_h*${lh})`, w, h) + format + '[top]',
-      textArgs('TAHTA', 'black', 'white', fsize, font, '(w-text_w)/2', `(h-text_h)/2`, w, h) + format + '[mid]',
+      textArgs('FELIZ', 'black', 'white', fsize, font, '(w-text_w)/2', `(h-text_h)/2-(text_h*${lh})`, w, h) + format + '[top]',
+      textArgs('CUMPLEAÑOS', 'black', 'white', fsize, font, '(w-text_w)/2', `(h-text_h)/2`, w, h) + format + '[mid]',
       textArgs(text, 'black', 'white', fsize, font, '(w-text_w)/2', `(h-text_h)/2+(text_h*${lh})`, w, h) + format + '[bot]',
       '[top][mid]blend=all_mode=addition[con]',
       '[con][bot]blend=all_mode=addition[txt]',

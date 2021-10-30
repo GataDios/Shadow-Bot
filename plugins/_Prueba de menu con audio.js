@@ -7,16 +7,11 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
-  let handler  = async (m, { conn }) => {
-       conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
-    }
-  { 
+  await m.reply('*GRACIAS POR SOLICITAR EL MENU DE EXPLICACIONES\nLEA DETALLADAMENTE CADA COMANDO Y SU EXPLICACION!!\nALGUNOS COMANDOS NO APARECEN AQUI, SE ESTA TRABAJANDO EN AGREGARLOS*')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_LISTA DE COMANDOS CON SU EXPLICACION:_*
-
 *<JUEGOS/>*
-
 ° ඬ⃟🕹 _#howgay *@tag / nombre*_
 - *Calcula el porcentaje de gay que es la persona o nombre puesto*
 ° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
@@ -25,9 +20,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Forma una pareja al azar en el grupo* 
 ° ඬ⃟🕹 _#slots *cantidad*_
 - *Simula el clásico juego de tragamonedas* 
-
 *<ECONOMIA/>* 
-
 ° ඬ⃟💵 _#monthly_
 - *Reclama dinero para apostar en el juego de slots*
 ° ඬ⃟💵 _#Claim_
@@ -36,9 +29,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 - *Reclama dinero para apostar en el juego de slots*
 ° ඬ⃟💵 _#Inv_
 - *Checa cuanto dinero tienes*
-
    *<DESCARGAS/>*
-
 ° ඬ⃟📥 _#google  *texto*_
 - *hace búsquedas en google y manda los enlaces con información y la imagen del screenshot*
 ° ඬ⃟📥 _#googlef *texto*_
@@ -60,9 +51,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ° ඬ⃟📥 _#lirik  *nombredelacanción*_
 - *Busca la letra de la canción y lo manda*
 Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik badbunnydakity 
-
 *<GESTION DE GRUPOS/>* 
-
 ° ඬ⃟💎 _#admin *@tag*_
 - *Le asigna cargo de administrador en el grupo*
 ° ඬ⃟💎 _#kick *@tag*_
@@ -87,9 +76,7 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 - *Envía el enlace del grupo*
 ° ඬ⃟💎 _#hidetag *texto*_
 - *Envía el mensaje desde el numero del Bot y le llega a todos la notificación aunque tenga silenciado el grupo*
-
 *<CREADORES/>*
-
 ° ඬ⃟🧧 _#Style *texto*_
 - *Envía en diferentes tipos de fuente de texto el texto puesto*
 ° ඬ⃟🧧 _#ytcomment *texto*_
@@ -118,9 +105,7 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 - (Responde a una nota de voz) *Convierte una nota de voz a archivo mp3*
 ° ඬ⃟🧧 _#toimg_
 - (Responde a un sticker) *Convierte a imagen*
-
 *<RANDOM/>*
-
 ° ඬ⃟👾 _#meme_
 - *Envía un meme mexicano totalmente random*
 ° ඬ⃟👾 _#cat_
@@ -135,10 +120,8 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 - *Te responde a la pregunta con alguna de las siguientes respuestas: 'Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'*
 ° ඬ⃟👾 #blackpink
 - *Envia una imagen random de este grupo de K-pop
-
 *<COMANDOS +18/>*
 - Usar bajo su respondabilidad
-
 ° ඬ⃟🔞 _#lesbian_
 ° ඬ⃟🔞 _#porno_
 ° ඬ⃟🔞 _#gimage Hentai_
@@ -151,10 +134,8 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 ° ඬ⃟🔞 _#Image XXX_
 ° ඬ⃟🔞 _#Image Teen desnuda_
 - Si la imagen se envía en formato de archivo reintentar nuevamente
-
 *<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*
 - Responde a una nota de voz o audio
-
 ° ඬ⃟🎤 #bass
 ° ඬ⃟🎤 #deep
 ° ඬ⃟🎤 #earrape
@@ -165,9 +146,7 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 ° ඬ⃟🎤 #robot
 ° ඬ⃟🎤 #slow
 ° ඬ⃟🎤 #smooth
-
 *<EXTRAS/>*
-
 ° ඬ⃟🐺 _#Join *link del grupo*_
 - *Ejemplo: #Join https://chat.whatsapp.com/JvizcYOkZOMCyyzeBIzne0*
 ° ඬ⃟🐺 _#daftar *nombre.edad*_
@@ -188,36 +167,33 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 - *Te manda información sobre tu zodiaco* 
 ° ඬ⃟🐺 _#Scan *numero con prefijo del pais*_
 - *Te proporciona datos generales sobre el numero*
-
 *<CHAT ANONIMO/>*
 - Únicamente funciona en privado al numero del Bot
-
 ° ඬ⃟📳 _#start_
 - *Inicia a hablar con alguien sin saber quien es*
 ° ඬ⃟📳 _#next_
 - *Pasa a la siguiente persona para hablar con ella*
 ° ඬ⃟📳 _#leave_
 - *Finaliza y sales del chat anónimo* 
-
 *<CONVIERTETE EN BOT/>*
-
 ° ඬ⃟🏷 _#jadibot_
 - *Te envía un código qr que solo tienes que escanear desde tu móvil en la app de WhatsApp móvil en la opción de WhatsApp web*
 ° ඬ⃟🏷 _#stop_
 - *Deja de ser bot*
 *_Nota: Si yo desactivo mi bot los bots creados desde este apartado se desactivan también, para volver a activarlo repetir el proceso.. Si el bot sigue activo pero el tuyo no responde enviar el comando con muchas letras que te llego al privado al escanear el código QR /// Nota2: El menu que el bot trae por defectos es el original, solo que algunos de los comandos de ahí están en otro idioma se aconseja usar el comando #setmenu y copiar y pegar el menu del Bot principal_*
-
 *<NOTA/>*
-
 ° Manda mensaje al propietario del Bot para solicitar que te agreguen a usuarios premium y poder usar el Bot sin limites 
 - *El mensaje debe incluir el nombre del grupo en el que estas con el Bot*
-
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['menu5']
+let handler  = async (m, { conn }) => {
+       conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
+}
+}
+handler.help = ['infodecadacomando']
 handler.tags = ['about']
-handler.command = /^(menu5?)$/i
+handler.command = /^(infodecadacomando?)$/i
 
 handler.fail = null
 

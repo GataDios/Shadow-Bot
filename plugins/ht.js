@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['Logoletras <texto>']
 handler.tags = ['tools']
-handler.command = /^((Logoletras)$/i
+handler.command = /^((rainbowlogo)?$/i
 handler.limit = false
 
 module.exports = handler

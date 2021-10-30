@@ -8,9 +8,9 @@ let handler = async (m, { conn, command, text }) => {
     }
   } : {})
 }
-handler.help = ['gay', 'lesbi'].map(v => 'how' + v + ' siapa?')
+handler.help = ['puta'].map(v => 'how' + v + ' quien es puta?')
 handler.tags = ['kerang']
-handler.command = /^(gay|lesbi)/i
+handler.command = /^(puta)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

@@ -14,9 +14,9 @@ let handler = async (m, { conn, text }) => {
     delete conn.hartatahta[m.chat]
   }
 }
-handler.help = ['logo <teks>']
+handler.help = ['tahta <teks>']
 handler.tags = ['tools']
-handler.command = /^(logo)$/i
+handler.command = /^((harta)?tahta)$/i
 handler.limit = false
 
 module.exports = handler

@@ -8,6 +8,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
   await m.reply('*GRACIAS POR SOLICITAR EL MENU DE EXPLICACIONES\nLEA DETALLADAMENTE CADA COMANDO Y SU EXPLICACION!!\nALGUNOS COMANDOS NO APARECEN AQUI, SE ESTA TRABAJANDO EN AGREGARLOS*')
+      conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_LISTA DE COMANDOS CON SU EXPLICACION:_*

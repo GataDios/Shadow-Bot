@@ -1,12 +1,12 @@
 let fs = require('fs')
 let handler = async (m, { conn, text }) => {
   conn.hartatahta = conn.hartatahta ? conn.hartatahta : {}
-  if (m.chat in conn.hartatahta) throw '*_El Bot todavia esta creando un diseño_*/n/n*_Espere a que termine..._*'
+  if (m.chat in conn.hartatahta) throw '*_El Bot todavia esta creando un diseño_*\n\n*_Espere a que termine..._*'
   else conn.hartatahta[m.chat] = true
-  m.reply('*_Creando diseño..._*\n/n*_Espere alrededor de 1 minuto_*')
+  m.reply('*_Creando diseño..._*\n\n*_Espere alrededor de 1 minuto_*')
   try {
     let img = await ht(text ? text : ':v')
-    conn.sendFile(m.chat, img, 'Logo.png', '*© The Shadow Brokers - Bot*', m)
+    conn.sendFile(m.chat, img, 'Logo.png', '*_Diseño terminado, aqui tienes tu imagen personalizada_*\n\n*© The Shadow Brokers - Bot*', m)
     setTimeout(() => {
       fs.unlinkSync(img)
     }, 5000);

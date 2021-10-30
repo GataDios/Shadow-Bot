@@ -9,6 +9,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let old = Math.round(performance.now())
   let handler  = async (m, { conn }) => {
        conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
+    }
+  { 
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_LISTA DE COMANDOS CON SU EXPLICACION:_*

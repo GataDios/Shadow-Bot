@@ -1,6 +1,6 @@
 let handler  = async (m, { conn }) => {
 	
-	await m.reply('[❗] WAIT, Tunggu Sebentar')
+	await m.reply('[❗] Espere un momento, estoy buscando el mejor para ti')
   conn.reply(m.chat,`${pickRandom(global.hot)}`, m)
 }
 handler.help = ['indohot']
@@ -11,6 +11,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
+handler.register = true
 
 handler.admin = false
 handler.botAdmin = false

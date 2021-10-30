@@ -8,9 +8,10 @@ handler.tags = ['images']
 handler.command = /^(randomnsfw)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = true
+handler.premium = false
 handler.group = false
 handler.private = false
+handler.register = true
 
 handler.admin = false
 handler.botAdmin = false

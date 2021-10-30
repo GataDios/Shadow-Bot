@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
   m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
   try {
     let img = await ht(text ? text : ':v')
-    conn.sendFile(m.chat, img, 'Feliz Cumpleaños.png', '*© The Shadow Brokers - Bot*', m)
+    conn.sendFile(m.chat, img, 'Logo.png', '*© The Shadow Brokers - Bot*', m)
     setTimeout(() => {
       fs.unlinkSync(img)
     }, 5000);
@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['tahta <teks>']
 handler.tags = ['tools']
-handler.command = /^((harta)?rainbowtext)$/i
+handler.command = /^((harta)?tahta)$/i
 handler.limit = false
 
 module.exports = handler

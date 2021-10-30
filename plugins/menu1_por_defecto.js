@@ -38,21 +38,24 @@ const defaultMenu = {
 *_Reglas e información sobre el Bot: https://n9.cl/the-shadow-brokers-bot-html_*
 
 _Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ_
-_- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de comandos nuevos, etc_
+_- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata, etc._
 
 *<OTROS MENUS>*
 
 ° ඬ⃟ℹ️ _#Infodecadacomando_
 ° ඬ⃟ℹ️ _#reglasdelbot_
 ° ඬ⃟ℹ️ _#creditosyagradecimientos_
+° ඬ⃟ℹ️ _#codigoparaaudios_
 
 *<NUMERO DEL CREADOR Y DE MODERADORES>*
+- Únicamente contactar números +1 
 
 ° ඬ⃟👻 _#owner_
 ° ඬ⃟👻 _#creator_
 ° ඬ⃟👻 _#moderadores_
 
 *<REPORTA FALLOS EN ALGÚN COMANDO/>*
+- Reportes falsos serán baneados del uso del Bot 
 
 ° ඬ⃟🔰 _#bug *texto*_
 ° ඬ⃟🔰 _#report *texto*_
@@ -61,6 +64,7 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 
 ° ඬ⃟🕹 _#gay *@tag / nombre*_
 ° ඬ⃟🕹 _#lesbi *@tag / nombre*_
+° ඬ⃟🕹 _#puta *@tag / nombre*_
 ° ඬ⃟🕹 _#formarpareja_
 ° ඬ⃟🕹 _#slots *cantidad*_
 
@@ -73,16 +77,16 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 
 *<DESCARGAS/>*
 
-° ඬ⃟📥 _#google  *texto*_
+° ඬ⃟📥 _#image *texto*_
+° ඬ⃟📥 _#gimage *texto*_
+° ඬ⃟📥 _#ytsearch *texto*_
+° ඬ⃟📥 _#ytmp4 *link yt*_
+° ඬ⃟📥 _#ytmp3 *link yt*_
+° ඬ⃟📥 _#play *titulo*_
+° ඬ⃟📥 _#play2 *titulo del video*_
+° ඬ⃟📥 _#lirik *nombredelacanción*_
+° ඬ⃟📥 _#google *texto*_
 ° ඬ⃟📥 _#googlef *texto*_
-° ඬ⃟📥 _#image  *texto*_
-° ඬ⃟📥 _#gimage  *texto*_
-° ඬ⃟📥 _#ytsearch  *texto*_
-° ඬ⃟📥 _#ytmp4  *link yt*_
-° ඬ⃟📥 _#ytmp3  *link yt*_
-° ඬ⃟📥 _#play  *titulo*_
-° ඬ⃟📥 _#play2  *titulo del video*_
-° ඬ⃟📥 _#lirik  *nombredelacanción*_
  
 *<GESTION DE GRUPOS/>* 
 
@@ -109,11 +113,12 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 ° ඬ⃟🧧 _#hornycard *texto*_
 ° ඬ⃟🧧 _#s_
 ° ඬ⃟🧧 _#sticker*_
-° ඬ⃟🧧 _#swm *Link de la imagen*_
+° ඬ⃟🧧 _#swm *Link d imagen d google*_
 ° ඬ⃟🧧 _#ttp *texto*_
 ° ඬ⃟🧧 _#attp *texto*_
 ° ඬ⃟🧧 _#attp2 *texto*_
 ° ඬ⃟🧧 _#wasted_
+° ඬ⃟🧧 _#trash_
 ° ඬ⃟🧧 _#rainbow_
 ° ඬ⃟🧧 _#circle_
 ° ඬ⃟🧧 _#tomp3_
@@ -154,13 +159,23 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 *- Si la imagen se envía en formato de archivo reintentar nuevamente*
 
 *<COMANDOS +18/>*
-- Usuarios premium 
+- Usuarios registrados 
 ​​​
 ° ඬ⃟🔞 _#lesbian_
 ° ඬ⃟🔞 _#porno_
 ° ඬ⃟🔞 _#randomnsfw_
 ° ඬ⃟🔞 _#pornogif_
 ° ඬ⃟🔞 _#hentai_
+° ඬ⃟🔞 _#indohot_
+° ඬ⃟🔞 _#panties_
+
+*<REGISTRO/>*
+
+° ඬ⃟📓 _#daftar nombre.edad_
+
+*<UNE EL BOT A TU GRUPO>*
+
+° ඬ⃟👽 _#join *link del grupo*_
 
 *<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*
 ​​​
@@ -177,8 +192,6 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 
 *<EXTRAS/>*
 
-° ඬ⃟🐺 _#join *link del grupo*_
-° ඬ⃟🐺 _#daftar *nombre.edad*_
 ° ඬ⃟🐺 _#profile_
 ° ඬ⃟🐺 _#simih *texto*_
 ° ඬ⃟🐺 _#afk *motivo*_
@@ -204,12 +217,27 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 ° ඬ⃟🎧 _#hola_
 ° ඬ⃟🎧 _#teamo_
 ° ඬ⃟🎧 _#Yamete_
+° ඬ⃟🎧 _#diagnosticadocongay_
+° ඬ⃟🎧 _#bañate_
+° ඬ⃟🎧 _#felizjueves_
 
 *<CHAT ANONIMO/>*
 
 ° ඬ⃟📳 _#start_
 ° ඬ⃟📳 _#next_
 ° ඬ⃟📳 _#leave_
+
+*<MUSICA CORTESIA DEL ADMIN/>*
+- Puede demorar 2 minuto aproximadamente en enviar el archivo mp3
+
+° ඬ⃟🎵 _#cortesiadeladmin1_
+
+*<VIDEOS DE MUSICAS SAD/>*
+- Puede demorar 1 minuto en enviar el archivo mp4
+
+° ඬ⃟⏯️ _#edmaverickdondeestas_
+° ඬ⃟⏯️ _#devuelvemeamichicahombresg_
+° ඬ⃟⏯️ _#beretlosiento_
 
 *<CONVIERTETE EN BOT/>*
 
@@ -220,10 +248,20 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 
 ° ඬ⃟🔥 _#tutorial_
 
-*<NOTAS/>*
+*<CREA LOGOS>*
 
-° Manda mensaje al propietario del Bot para solicitar el comando para agregarte a usuarios *_PREMIUM_*
-- *El mensaje deber decir lo siguiente: Hola, me podrías decir el comando para agregarme a usuarios PREMIUM*
+° ඬ⃟🖍️ _#tahta *texto*_
+~- El texto debe ser menor a 11 letras~
+~- Crea una imagen con el texto~
+~- El texto lo escribe 3 veces en 3 filas diferentes~
+~- Puede ser diferentes colores las letras (es aleatorio)~
+~- Si falla vuelva a intentarlo y corrobore que cumpla con lo antes mencionado~
+° ඬ⃟🖍️ _nulis *texto*_
+~- Crea una tipo de lista con el texto que le pongas~
+
+*<AVISOS/>*
+
+°ඬ⃟📢 __
 
 *<PROPIETARIO Y MODERADORES/>*
 
@@ -234,7 +272,6 @@ _- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de com
 ° ඬ⃟🤖 _#enable autoread*_
 ° ඬ⃟🤖 _#disable autoread_
 ° ඬ⃟🤖 _#enable autoread_
-° ඬ⃟🤖 _#addprem *@tag*_
 ° ඬ⃟🤖 _#resetlimit_
 ° ඬ⃟🤖 _#banlist_
 ° ඬ⃟🤖 _#bcgc *texto*_

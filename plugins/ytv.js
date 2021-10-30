@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
 ┴
 ├‣*📂Tamaño:* ${filesizeF}
 ┴
-├‣*${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
+├‣*${isLimit ? 'Pakai ': ''}Link de descarga (usar si el Bot no manda el archivo mp4):* ${dl_link}
 ┴
 `.trim(), m)
   let _thumb = {}

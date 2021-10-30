@@ -7,136 +7,157 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
-  await m.reply('*GRACIAS POR SOLICITAR EL MENU DE EXPLICACIONES\nLEA DETALLADAMENTE CADA COMANDO Y SU EXPLICACION!!\nALGUNOS COMANDOS NO APARECEN AQUI, SE ESTA TRABAJANDO EN AGREGARLOS*')
       conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-*_LISTA DE COMANDOS CON SU EXPLICACION:_*
-*<JUEGOS/>*
-° ඬ⃟🕹 _#howgay *@tag / nombre*_
-- *Calcula el porcentaje de gay que es la persona o nombre puesto*
-° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
-- *Calcula es porcentaje de lesbiana que es esa persona o nombre puesto*
-° ඬ⃟🕹 _#formarpareja_
-- *Forma una pareja al azar en el grupo* 
-° ඬ⃟🕹 _#slots *cantidad*_
-- *Simula el clásico juego de tragamonedas* 
-*<ECONOMIA/>* 
-° ඬ⃟💵 _#monthly_
-- *Reclama dinero para apostar en el juego de slots*
-° ඬ⃟💵 _#Claim_
-- *Reclama dinero para apostar en el juego de slots*
-° ඬ⃟💵 _#weekly_
-- *Reclama dinero para apostar en el juego de slots*
-° ඬ⃟💵 _#Inv_
-- *Checa cuanto dinero tienes*
-   *<DESCARGAS/>*
-° ඬ⃟📥 _#google  *texto*_
-- *hace búsquedas en google y manda los enlaces con información y la imagen del screenshot*
-° ඬ⃟📥 _#googlef *texto*_
-- *hace búsquedas en google y manda los enlaces con información y la imagen del screenshot*
-° ඬ⃟📥 _#image  *texto*_
-- *Envía una imagen sobre el texto que pusiste* 
-° ඬ⃟📥 _#gimage  *texto*_
-- *Envía una imagen sobre el texto que pusiste* 
-° ඬ⃟📥 _#ytsearch  *texto*_
-- *Hace búsquedas de videos en YouTube y manda varios links de los resultados con información del video* 
-° ඬ⃟📥 _#ytmp4  *link yt*_
-- *Descarga el video del enlace puesto y lo manda en formato mp4*
-° ඬ⃟📥 _#ytmp3  *link yt*_
-- *Descarga el video del enlace puesto y lo manda en formato mp3*
-° ඬ⃟📥 _#play  *titulo*_
-- *Descarga música con solo el nombre de la música - Nota: Puede que tarde unos minutos en enviar el archivo mp3* 
-° ඬ⃟📥 _#play2  *titulo del video*_
-- *Descarga música con solo el nombre de la música - Nota: Puede que tarde unos minutos en enviar el archivo mp4* 
-° ඬ⃟📥 _#lirik  *nombredelacanción*_
-- *Busca la letra de la canción y lo manda*
-Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik badbunnydakity 
-*<GESTION DE GRUPOS/>* 
-° ඬ⃟💎 _#admin *@tag*_
-- *Le asigna cargo de administrador en el grupo*
-° ඬ⃟💎 _#kick *@tag*_
-- *Lo elimina del grupo - Nota: Puede ocasionar que el numero del bot se vaya a soporte, o sea quede inservible* 
-° ඬ⃟💎 _#add  *número*_
-- (Ejemplo de numero: +1 (952) 213-7825) *Añade al grupo el numero puesto*
-° ඬ⃟💎 _#group *open/close*_
-*Abre o cierra el grupo, solo permite enviar mensajes a Administradores*
-° ඬ⃟💎 _#Enable welcome_
-- *Activa la bienvenida y la despedida en el grupo*
-° ඬ⃟💎 _#Disable welcome_
-- *Desactiva la bienvenida y la despedida el grupo*
-° ඬ⃟💎 _#listonline_
-- *Envía una lista con los usuarios del grupo que están en linea*
+「 THE SHADOW BROKERS - BOT 」
+
+INFORMACIÓN DEL BOT
+⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN EL SIGUIENTE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️
+Reglas e información sobre el Bot: https://n9.cl/the-shadow-brokers-bot-html
+
+Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ
+- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata, etc.
+
+<OTROS MENUS>
+
+° ඬ⃟ℹ️ #Infodecadacomando
+° ඬ⃟ℹ️ #reglasdelbot
+° ඬ⃟ℹ️ #creditosyagradecimientos
+° ඬ⃟ℹ️ #codigoparaaudios
+
+<NUMERO DEL CREADOR Y DE MODERADORES>
+- Únicamente contactar números +1 
+
+° ඬ⃟👻 #owner
+° ඬ⃟👻 #creator
+° ඬ⃟👻 #moderadores
+
+<REPORTA FALLOS EN ALGÚN COMANDO/>
+- Reportes falsos serán baneados del uso del Bot 
+
+° ඬ⃟🔰 #bug texto
+° ඬ⃟🔰 #report texto
+
+<JUEGOS/>
+
+° ඬ⃟🕹 #gay @tag / nombre
+° ඬ⃟🕹 #lesbi @tag / nombre
+° ඬ⃟🕹 #puta @tag / nombre
+° ඬ⃟🕹 #formarpareja
+° ඬ⃟🕹 #slots cantidad
+
+<ECONOMIA/> 
+
+° ඬ⃟💵 #monthly
+° ඬ⃟💵 #claim
+° ඬ⃟💵 #weekly
+° ඬ⃟💵 #billetera
+
+<DESCARGAS/>
+
+° ඬ⃟📥 #image texto
+° ඬ⃟📥 #gimage texto
+° ඬ⃟📥 #ytsearch texto
+° ඬ⃟📥 #ytmp4 link yt
+° ඬ⃟📥 #ytmp3 link yt
+° ඬ⃟📥 #play titulo
+° ඬ⃟📥 #play2 titulo del video
+° ඬ⃟📥 #lirik nombredelacanción
+° ඬ⃟📥 #google texto
+° ඬ⃟📥 #googlef texto
+ 
+<GESTION DE GRUPOS/> 
+
+° ඬ⃟💎 #admin @tag
+° ඬ⃟💎 #kick @tag
+° ඬ⃟💎 #add  número
+° ඬ⃟💎 #group open/close
+° ඬ⃟💎 #enable welcome
+° ඬ⃟💎 #disable welcome
+° ඬ⃟💎 #group open/close
+° ඬ⃟💎 #listonline
 ° ඬ⃟💎 #enable antilink
-- *Expulsa a la persona que mande el enlace de algun grupo de WhatsApp*
 ° ඬ⃟💎 #disable antilink 
-- *Desactiva la funcion de expulsar a la persona que mande el enlace de algun grupo de WhatsApp*
-° ඬ⃟💎 _#link_
-- *Envía el enlace del grupo*
-° ඬ⃟💎 _#linkgroup_
-- *Envía el enlace del grupo*
-° ඬ⃟💎 _#hidetag *texto*_
-- *Envía el mensaje desde el numero del Bot y le llega a todos la notificación aunque tenga silenciado el grupo*
-*<CREADORES/>*
-° ඬ⃟🧧 _#Style *texto*_
-- *Envía en diferentes tipos de fuente de texto el texto puesto*
-° ඬ⃟🧧 _#ytcomment *texto*_
-- *Crea una imagen en que aparece tu foto con el texto que pusiste en un tipo de comentario de YouTube*
-° ඬ⃟🧧 _#hornycard *texto*_
-- *Crea una tarjeta con tu foto de perfil*
-° ඬ⃟🧧 _#S_
-- (Responde a una imagen o envía la imagen con la leyenda "#S") *Crea stickers partiendo de una imagen. Nota: NO crea sticker de videos o gifs* 
-° ඬ⃟🧧 _#sticker*_
-(Responde a una imagen o envía la imagen con la leyenda "#Sticker") *Crea stickers partiendo de una imagen. Nota: NO crea sticker de videos o gifs* 
-° ඬ⃟🧧 _#swm *Link de la imagen*_ 
-- (Envía el código con el enlace) *Crea stickers partiendo de un enlace de imagen de google* 
-° ඬ⃟🧧 _#ttp *texto*_
-- *Crea stickers con el texto estilo 1*
-° ඬ⃟🧧 _#attp *texto*_
-- *Crea stickers con el texto estilo 2*
-° ඬ⃟🧧 _#attp2 *texto*_
-- *Crea stickers con el texto estilo 3*
-° ඬ⃟🧧 _#wasted_
-- (Responde a una imagen) *Lo convierte en un sticker tipo GTA de cuando mueres*
-° ඬ⃟🧧 _#rainbow_
-- (Responde a una imagen) *Lo convierte a un sticker con efecto de arcoíris*
-° ඬ⃟🧧 _#circle_
-- (Responde a una imagen) *Lo convierte en un sticker en circulo*
-° ඬ⃟🧧 _#tomp3_
-- (Responde a una nota de voz) *Convierte una nota de voz a archivo mp3*
-° ඬ⃟🧧 _#toimg_
-- (Responde a un sticker) *Convierte a imagen*
-*<RANDOM/>*
-° ඬ⃟👾 _#meme_
-- *Envía un meme mexicano totalmente random*
-° ඬ⃟👾 _#cat_
-- *Envía una imagen o video de un gato*
-° ඬ⃟👾 _#dog_
-- *Envía una imagen o video de un perro*
-° ඬ⃟👾 _#pikachu_
-- *Envía una imagen, vídeo o gif random sobre el Pokémon Pikachu*
-° ඬ⃟👾 _#waifu_
-- *Envía una imagen de un personaje animado de la comunidad del anime*
+° ඬ⃟💎 #link
+° ඬ⃟💎 #linkgroup
+° ඬ⃟💎 #hidetag texto
+° ඬ⃟💎 #setname Nuevo nombre del grupo
+° ඬ⃟💎 #invocar
+
+<CREADORES/>
+
+° ඬ⃟🧧 #style texto
+° ඬ⃟🧧 #ytcomment texto
+° ඬ⃟🧧 #hornycard texto
+° ඬ⃟🧧 #s
+° ඬ⃟🧧 #sticker*
+° ඬ⃟🧧 #swm Link d imagen d google
+° ඬ⃟🧧 #ttp texto
+° ඬ⃟🧧 #attp texto
+° ඬ⃟🧧 #attp2 texto
+° ඬ⃟🧧 #wasted
+° ඬ⃟🧧 #trash
+° ඬ⃟🧧 #rainbow
+° ඬ⃟🧧 #circle
+° ඬ⃟🧧 #tomp3
+° ඬ⃟🧧 #toimg
+
+<RANDOM/>
+
+° ඬ⃟👾 #meme
+° ඬ⃟👾 #meme2
+° ඬ⃟👾 #meme3
+° ඬ⃟👾 #cat
+° ඬ⃟👾 #dog
+° ඬ⃟👾 #pikachu
+° ඬ⃟👾 #waifu
 ° ඬ⃟👾 #apakah pregunta
-- *Te responde a la pregunta con alguna de las siguientes respuestas: 'Si','Tal vez sí','Posiblemente','Probablemente no','No','Imposible'*
 ° ඬ⃟👾 #blackpink
-- *Envia una imagen random de este grupo de K-pop
-*<COMANDOS +18/>*
-- Usar bajo su respondabilidad
-° ඬ⃟🔞 _#lesbian_
-° ඬ⃟🔞 _#porno_
-° ඬ⃟🔞 _#gimage Hentai_
-° ඬ⃟🔞 _#image yaoi_
-° ඬ⃟🔞 _#Image loli_
-° ඬ⃟🔞 _#Image Porno_
-° ඬ⃟🔞 _#Image Tetas_
-° ඬ⃟🔞 _#Image chico desnudo_
-° ඬ⃟🔞 _#Image Pene_
-° ඬ⃟🔞 _#Image XXX_
-° ඬ⃟🔞 _#Image Teen desnuda_
+° ඬ⃟👾 #reto
+° ඬ⃟👾 #verdad
+° ඬ⃟👾 #imagenrandom
+° ඬ⃟👾 #randomkpop
+° ඬ⃟👾 #neko
+° ඬ⃟👾 #iqtest
+° ඬ⃟👾 #nyan
+
+
+<COMANDOS +18/>
+​​​
+° ඬ⃟🔞 #Image Hentai sin censura
+° ඬ⃟🔞 #Image Hentai
+° ඬ⃟🔞 #image yaoi
+° ඬ⃟🔞 #Image loli
+° ඬ⃟🔞 #Image Porno
+° ඬ⃟🔞 #Image Tetas
+° ඬ⃟🔞 #Image chico desnudo
+° ඬ⃟🔞 #Image Pene
+° ඬ⃟🔞 #Image XXX
+° ඬ⃟🔞 #Image Teen desnuda
 - Si la imagen se envía en formato de archivo reintentar nuevamente
-*<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>*
-- Responde a una nota de voz o audio
+
+<COMANDOS +18/>
+- Usuarios registrados 
+​​​
+° ඬ⃟🔞 #lesbian
+° ඬ⃟🔞 #porno
+° ඬ⃟🔞 #randomnsfw
+° ඬ⃟🔞 #pornogif
+° ඬ⃟🔞 #hentai
+° ඬ⃟🔞 #indohot
+° ඬ⃟🔞 #panties
+
+<REGISTRO/>
+
+° ඬ⃟📓 #daftar nombre.edad
+
+<UNE EL BOT A TU GRUPO>
+
+° ඬ⃟👽 #join link del grupo
+
+<EFECTOS PARA NOTAS DE VOZ O AUDIOS/>
+​​​
 ° ඬ⃟🎤 #bass
 ° ඬ⃟🎤 #deep
 ° ඬ⃟🎤 #earrape
@@ -147,45 +168,101 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 ° ඬ⃟🎤 #robot
 ° ඬ⃟🎤 #slow
 ° ඬ⃟🎤 #smooth
-*<EXTRAS/>*
-° ඬ⃟🐺 _#Join *link del grupo*_
-- *Ejemplo: #Join https://chat.whatsapp.com/JvizcYOkZOMCyyzeBIzne0*
-° ඬ⃟🐺 _#daftar *nombre.edad*_
-- *Regístrate, así el bot te reconocerá /// NO ES OBLIGATORIO* 
-° ඬ⃟🐺 _#profile_
-- *Obtén información sobre tu perfil en el bot* 
-° ඬ⃟🐺 _#Simih *texto*_
-- *Habla con la inteligencia artificial simsimi - Nota: Responde únicamente en indonesio e ingles*
-° ඬ⃟🐺 _#afk *motivo*_
-- *Hace que cuando te etiqueten envié un mensaje diciendo que no te etiqueten porque estás ausente por el motivo que pusiste*
-° ඬ⃟🐺 _#readmore *texto1| texto2*_
-- *El bot envía el texto 1 y el efecto de leer mas para mostrar el texto 2*
-° ඬ⃟🐺 _#qr *texto*_
-- *Convierte en un código qr el texto que quieras _ Para ver que el contenido escrito es lo que pusiste en el código qr puedes usar esta pagina muy sencilla en la cual solo debes subir la imagen: https://www.codigos-qr.com/lector-qr-online/*
-° ඬ⃟🐺 _#Calc *expresión matemática*_ 
-- *Realiza la operación y te da el resultado* 
-° ඬ⃟🐺 _#Zodiac *AAAA MM DD*_
-- *Te manda información sobre tu zodiaco* 
-° ඬ⃟🐺 _#Scan *numero con prefijo del pais*_
-- *Te proporciona datos generales sobre el numero*
-*<CHAT ANONIMO/>*
-- Únicamente funciona en privado al numero del Bot
-° ඬ⃟📳 _#start_
-- *Inicia a hablar con alguien sin saber quien es*
-° ඬ⃟📳 _#next_
-- *Pasa a la siguiente persona para hablar con ella*
-° ඬ⃟📳 _#leave_
-- *Finaliza y sales del chat anónimo* 
-*<CONVIERTETE EN BOT/>*
-° ඬ⃟🏷 _#jadibot_
-- *Te envía un código qr que solo tienes que escanear desde tu móvil en la app de WhatsApp móvil en la opción de WhatsApp web*
-° ඬ⃟🏷 _#stop_
-- *Deja de ser bot*
-*_Nota: Si yo desactivo mi bot los bots creados desde este apartado se desactivan también, para volver a activarlo repetir el proceso.. Si el bot sigue activo pero el tuyo no responde enviar el comando con muchas letras que te llego al privado al escanear el código QR /// Nota2: El menu que el bot trae por defectos es el original, solo que algunos de los comandos de ahí están en otro idioma se aconseja usar el comando #setmenu y copiar y pegar el menu del Bot principal_*
-*<NOTA/>*
-° Manda mensaje al propietario del Bot para solicitar que te agreguen a usuarios premium y poder usar el Bot sin limites 
-- *El mensaje debe incluir el nombre del grupo en el que estas con el Bot*
-█║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
+
+<EXTRAS/>
+
+° ඬ⃟🐺 #profile
+° ඬ⃟🐺 #simih texto
+° ඬ⃟🐺 #afk motivo
+° ඬ⃟🐺 #readmore texto1| texto2
+° ඬ⃟🐺 #qr texto
+° ඬ⃟🐺 #calc expresión matemática 
+° ඬ⃟🐺 #zodiac AAAA MM DD
+° ඬ⃟🐺 #scan numero con prefijo del pais
+° ඬ⃟🐺 #kpop
+
+<AUDIOS/> 
+
+° ඬ⃟🎧 #buenosdias
+° ඬ⃟🎧 #buenosdias2
+° ඬ⃟🎧 #fiestadeladmin
+° ඬ⃟🎧 #fiestadeladmin2
+° ඬ⃟🎧 #viernes
+° ඬ⃟🎧 #chicalgante
+° ඬ⃟🎧 #baneado
+° ඬ⃟🎧 #anadieleimporta
+° ඬ⃟🎧 #horadesexo
+° ඬ⃟🎧 #vetealavrg
+° ඬ⃟🎧 #hola
+° ඬ⃟🎧 #teamo
+° ඬ⃟🎧 #Yamete
+° ඬ⃟🎧 #diagnosticadocongay
+° ඬ⃟🎧 #bañate
+° ඬ⃟🎧 #felizjueves
+
+<CHAT ANONIMO/>
+
+° ඬ⃟📳 #start
+° ඬ⃟📳 #next
+° ඬ⃟📳 #leave
+
+<MUSICA CORTESIA DEL ADMIN/>
+- Puede demorar 2 minuto aproximadamente en enviar el archivo mp3
+
+° ඬ⃟🎵 #cortesiadeladmin1
+
+<VIDEOS DE MUSICAS SAD/>
+- Puede demorar 1 minuto en enviar el archivo mp4
+
+° ඬ⃟⏯️ #edmaverickdondeestas
+° ඬ⃟⏯️ #devuelvemeamichicahombresg
+° ඬ⃟⏯️ #beretlosiento
+
+<CONVIERTETE EN BOT/>
+
+° ඬ⃟🏷 #stop
+° ඬ⃟🏷 #jadibot
+
+<CREA TU NUMERO VIRTUAL E INSTALA UN BOT EN EL/>
+
+° ඬ⃟🔥 #tutorial
+
+<CREA LOGOS>
+
+° ඬ⃟🖍️ #tahta texto
+- El texto debe ser menor a 11 letras
+- Crea una imagen con el texto
+- El texto lo escribe 3 veces en 3 filas diferentes
+- Puede ser diferentes colores las letras (es aleatorio)
+- Si falla vuelva a intentarlo y corrobore que cumpla con lo antes mencionado
+° ඬ⃟🖍️ nulis texto
+- Crea una tipo de lista con el texto que le pongas
+
+<AVISOS/>
+
+°ඬ⃟📢 __
+
+<PROPIETARIO Y MODERADORES/>
+
+° ඬ⃟🤖 #banuser @tag
+° ඬ⃟🤖 #banchat
+° ඬ⃟🤖 #setmenu
+° ඬ⃟🤖 #enable restrict
+° ඬ⃟🤖 #enable autoread*
+° ඬ⃟🤖 #disable autoread
+° ඬ⃟🤖 #enable autoread
+° ඬ⃟🤖 #resetlimit
+° ඬ⃟🤖 #banlist
+° ඬ⃟🤖 #bcgc texto
+° ඬ⃟🤖 #bc texto
+° ඬ⃟🤖 #update
+° ඬ⃟🤖 #restart
+° ඬ⃟🤖 #backup
+° ඬ⃟🤖 #unbanchat
+° ඬ⃟🤖 #unban @tag
+° ඬ⃟🤖 #del
+
+「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」
 `.trim(), m)
 }
 handler.help = ['menu5']

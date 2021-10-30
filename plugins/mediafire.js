@@ -41,7 +41,7 @@ try {
 }
 handler.help = ['mediafire'].map(v => v + ' <link>')
 handler.tags = ['downloader']
-handler.command = /^(mediafire)$/i
+handler.command = /^(mediafiredownload)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

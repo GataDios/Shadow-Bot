@@ -187,9 +187,13 @@ Nota: Escribe el nombre de la cancion junto o sea sin espacios - Ejemplo: #lirik
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['infodecadacomando']
+let handler  = async (m, { conn }) => {
+       conn.sendFile(m.chat, 'media/FelizJueves.mp3', '', 'xd', m)
+  }
+}
+handler.help = ['menu5']
 handler.tags = ['about']
-handler.command = /^(infodecadacomando?)$/i
+handler.command = /^(menu5?)$/i
 
 handler.fail = null
 

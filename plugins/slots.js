@@ -48,19 +48,19 @@ ${pickRandom(['🍊', '🍇', '🍉', '🍌', '🍍'])}|${pickRandom(['🍊', '�
         }
         let WinOrLose, Hadiah
         if (spin1 == spin2 && spin2 == spin3 && spin3 == spin4 && spin4 == spin5 && spin5 == spin6 && spin6 == spin7 && spin7 == spin8 && spin8 == spin9) {
-            WinOrLose = 'BIG JACKPOT'
+            WinOrLose = 'GRAN BOTE'
             Hadiah = `+${count * 4}`
             user.money += count * 4
         } else if (spin4 == spin5 && spin5  == spin6) {
-           WinOrLose = 'JACKPOT' 
+           WinOrLose = 'BOTE' 
            Hadiah = `+${count * 2}`
            user.money += count * 2
         } else if ((spin1 == spin2 && spin2 == spin3) || (spin7 == spin8 && spin8 == spin9)) {  
             Hadiah = `-${count * 1}`
-            WinOrLose = 'DIKIT LAGI!!'
+            WinOrLose = 'UN POCO MÁS!!'
         } else {
              Hadiah = `-${count * 1}`
-             WinOrLose = 'YOU LOSE'
+             WinOrLose = 'TÚ HAZ PIERDES'
         } 
         conn.reply(m.chat, `
        *🎰VIRTUAL SLOTS🎰*

@@ -31,22 +31,14 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-**_「 THE SHADOW BROKERS - BOT 」_*
+*_「 THE SHADOW BROKERS - BOT 」_*
 
-*Información del Bot*
-_- Propietario: Bruno sobrino_ 
-_- Numero del propietario: +1 (952) 522-0880_
-_- Link directo: https://api.whatsapp.com/send?phone=19525220880_
-_Moderadora 1:_ Estefanía Gutierrez 
-_Moderador 2:_ Maximiliano de la cruz 
- 
-*_Reglas e información sobre el Bot: https://the-shadow-brokers-bot-info.blogspot.com/2021/10/the-shadow-brokers-bot.html_*
-*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN ESE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
+*INFORMACIÓN DEL BOT*
+*_⚠️-EL DESCONOCIMIENTO DE LO MENCIONADO EN EL SIGUIENTE ARTICULO NO EXIME A LA PERSONA DE LAS REGLAS Y SANCIONES QUE DE ELLA EMANAN-⚠️_*
+*_Reglas e información sobre el Bot: https://n9.cl/the-shadow-brokers-bot-html_*
 
 _Grupo oficial del Bot: https://chat.whatsapp.com/JlomZPEgo3bLmzjGUYPfyJ_
-
-Prefijo del Bot: MULTI-PREFIJO
-(#, $, ?, !, /, .)
+_- Primeros en ser usuarios premium, regalos de numero virtuales, pruebas de comandos nuevos, etc_
 
 *<OTROS MENUS>*
 
@@ -54,21 +46,32 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟ℹ️ _#reglasdelbot_
 ° ඬ⃟ℹ️ _#creditosyagradecimientos_
 
-   *<JUEGOS/>*
+*<NUMERO DEL CREADOR Y DE MODERADORES>*
 
-° ඬ⃟🕹 _#howgay *@tag / nombre*_
-° ඬ⃟🕹 _#howlesbi *@tag / nombre*_
-° ඬ⃟🕹 _#Formarpareja_
+° ඬ⃟👻 _#owner_
+° ඬ⃟👻 _#creator_
+° ඬ⃟👻 _#moderadores_
+
+*<REPORTA FALLOS EN ALGÚN COMANDO/>*
+
+° ඬ⃟🔰 _#bug *texto*_
+° ඬ⃟🔰 _#report *texto*_
+
+*<JUEGOS/>*
+
+° ඬ⃟🕹 _#gay *@tag / nombre*_
+° ඬ⃟🕹 _#lesbi *@tag / nombre*_
+° ඬ⃟🕹 _#formarpareja_
 ° ඬ⃟🕹 _#slots *cantidad*_
 
 *<ECONOMIA/>* 
 
 ° ඬ⃟💵 _#monthly_
-° ඬ⃟💵 _#Claim_
+° ඬ⃟💵 _#claim_
 ° ඬ⃟💵 _#weekly_
 ° ඬ⃟💵 _#billetera_
 
-   *<DESCARGAS/>*
+*<DESCARGAS/>*
 
 ° ඬ⃟📥 _#google  *texto*_
 ° ඬ⃟📥 _#googlef *texto*_
@@ -87,8 +90,8 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟💎 _#kick *@tag*_
 ° ඬ⃟💎 _#add  *número*_
 ° ඬ⃟💎 _#group *open/close*_
-° ඬ⃟💎 _#Enable welcome_
-° ඬ⃟💎 _#Disable welcome_
+° ඬ⃟💎 _#enable welcome_
+° ඬ⃟💎 _#disable welcome_
 ° ඬ⃟💎 _#group *open/close*_
 ° ඬ⃟💎 _#listonline_
 ° ඬ⃟💎 _#enable antilink_
@@ -96,15 +99,15 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟💎 _#link_
 ° ඬ⃟💎 _#linkgroup_
 ° ඬ⃟💎 _#hidetag *texto*_
-° ඬ⃟💎 _#Setname *Nuevo nombre del grupo*_
-° ඬ⃟💎 _#tagall_
+° ඬ⃟💎 _#setname *Nuevo nombre del grupo*_
+° ඬ⃟💎 _#invocar_
 
 *<CREADORES/>*
 
-° ඬ⃟🧧 _#Style *texto*_
+° ඬ⃟🧧 _#style *texto*_
 ° ඬ⃟🧧 _#ytcomment *texto*_
 ° ඬ⃟🧧 _#hornycard *texto*_
-° ඬ⃟🧧 _#S_
+° ඬ⃟🧧 _#s_
 ° ඬ⃟🧧 _#sticker*_
 ° ඬ⃟🧧 _#swm *Link de la imagen*_
 ° ඬ⃟🧧 _#ttp *texto*_
@@ -133,12 +136,13 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟👾 _#randomkpop_
 ° ඬ⃟👾 _#neko_
 ° ඬ⃟👾 _#iqtest_
+° ඬ⃟👾 _#nyan_
+
 
 *<COMANDOS +18/>*
 ​​​
 ° ඬ⃟🔞 _#Image Hentai sin censura_
 ° ඬ⃟🔞 _#Image Hentai_
-° ඬ⃟🔞 _#gimage Hentai_
 ° ඬ⃟🔞 _#image yaoi_
 ° ඬ⃟🔞 _#Image loli_
 ° ඬ⃟🔞 _#Image Porno_
@@ -173,17 +177,33 @@ Prefijo del Bot: MULTI-PREFIJO
 
 *<EXTRAS/>*
 
-° ඬ⃟🐺 _#Join *link del grupo*_
+° ඬ⃟🐺 _#join *link del grupo*_
 ° ඬ⃟🐺 _#daftar *nombre.edad*_
 ° ඬ⃟🐺 _#profile_
-° ඬ⃟🐺 _#Simih *texto*_
+° ඬ⃟🐺 _#simih *texto*_
 ° ඬ⃟🐺 _#afk *motivo*_
 ° ඬ⃟🐺 _#readmore *texto1| texto2*_
 ° ඬ⃟🐺 _#qr *texto*_
-° ඬ⃟🐺 _#Calc *expresión matemática*_ 
-° ඬ⃟🐺 _#Zodiac *AAAA MM DD*_
-° ඬ⃟🐺 _#Scan *numero con prefijo del pais*_
-° ඬ⃟🐺 _#Kpop_
+° ඬ⃟🐺 _#calc *expresión matemática*_ 
+° ඬ⃟🐺 _#zodiac *AAAA MM DD*_
+° ඬ⃟🐺 _#scan *numero con prefijo del pais*_
+° ඬ⃟🐺 _#kpop_
+
+*<AUDIOS/>* 
+
+° ඬ⃟🎧 _#buenosdias_
+° ඬ⃟🎧 _#buenosdias2_
+° ඬ⃟🎧 _#fiestadeladmin_
+° ඬ⃟🎧 _#fiestadeladmin2_
+° ඬ⃟🎧 _#viernes_
+° ඬ⃟🎧 _#chicalgante_
+° ඬ⃟🎧 _#baneado_
+° ඬ⃟🎧 _#anadieleimporta_
+° ඬ⃟🎧 _#horadesexo_
+° ඬ⃟🎧 _#vetealavrg_
+° ඬ⃟🎧 _#hola_
+° ඬ⃟🎧 _#teamo_
+° ඬ⃟🎧 _#Yamete_
 
 *<CHAT ANONIMO/>*
 
@@ -198,7 +218,7 @@ Prefijo del Bot: MULTI-PREFIJO
 
 *<CREA TU NUMERO VIRTUAL E INSTALA UN BOT EN EL/>*
 
-° ඬ⃟🔥 _#Tutorial_
+° ඬ⃟🔥 _#tutorial_
 
 *<NOTAS/>*
 
@@ -214,7 +234,7 @@ Prefijo del Bot: MULTI-PREFIJO
 ° ඬ⃟🤖 _#enable autoread*_
 ° ඬ⃟🤖 _#disable autoread_
 ° ඬ⃟🤖 _#enable autoread_
-° ඬ⃟🤖 _#addprems_
+° ඬ⃟🤖 _#addprem *@tag*_
 ° ඬ⃟🤖 _#resetlimit_
 ° ඬ⃟🤖 _#banlist_
 ° ඬ⃟🤖 _#bcgc *texto*_

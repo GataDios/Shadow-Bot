@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
     if (!code) throw 'Link invalido'
     if (isMods || isOwner || m.fromMe) {
         let res = await conn.acceptInvite(code)
-        m.reply(`Se unió con éxito al grupo ${res.gid}`)
+        m.reply(`*Se unió con éxito al grupo ${res.gid}`)*
     } else {
     
         let name = conn.getName(m.sender)
@@ -17,7 +17,7 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
             date: new Date * 1
         }
         for (let jid of Object.entries(global.Owner).filter(v => v[1].isReport).map(v => v[0].replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) m.reply('*dari:* ' + m.sender.split('@')[0] + '\n*Link:* ' + link, jid)
-        m.reply('En proceso.. le llego notificacion a todos mis moderadores, tan pronto puedan me agregaran al grupo\nNO HACER SPAM DEL COMANDO CON EL LINK O SERAN BLOQUEADOS\n*EL BOT NO SE ESTA AGREGANDO EL BOT A GRUPOS CON MENOS DE 15 PARTICIPANTES')
+        m.reply('*_En proceso.. le llego notificacion a todos mis moderadores, tan pronto puedan me agregaran al grupo_*\n\n*_No hacer spam del comando con el mismo enlace o seran bloqueados del uso del Bot_*\n\n*_El Bot no se agrega a grupos con menos de 15 participantes_*')
     }
 }
 handler.help = ['join [chat.whatsapp.com]']

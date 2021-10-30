@@ -265,9 +265,9 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 *_「 𝙏͚͜͝͠𝙝͚͜͝͠𝙚͚͜͝͠ ͚͜͝͠𝙎͚͜͝͠𝙝͚͜͝͠𝙖͚͜͝͠𝙙͚͜͝͠𝙤͚͜͝͠𝙬͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙧͚͜͝͠𝙤͚͜͝͠𝙠͚͜͝͠𝙚͚͜͝͠𝙧͚͜͝͠𝙨͚͜͝͠ ͚͜͝͠-͚͜͝͠ ͚͜͝͠𝘽͚͜͝͠𝙤͚͜͝͠𝙩͚͜͝͠ ͚͜͝͠  」_*
 `.trim(), m)
 }
-handler.help = ['menu']
-handler.tags = ['about']
-handler.command = /^(menu?)$/i
+handler.help = ['menu', 'help', '?']
+handler.tags = ['main']
+handler.command = /^(menu|help|\?)$/i
 
 handler.fail = null
 

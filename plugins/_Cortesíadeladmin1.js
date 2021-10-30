@@ -1,5 +1,5 @@
 let handler  = async (m, { conn }) => {
-       conn.sendFile(m.chat, 'Cortesiadeladmin/cortesíadeladmin1.mp4', '', 'xd', m)
+       conn.sendFile(m.chat, 'Cortesiadeladmin/cortesíadeladmin1.mp3', '', 'xd', m)
 }
 handler.command = /^(cortesíadeladmin1)$/i
 handler.fail = null

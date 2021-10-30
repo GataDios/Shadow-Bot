@@ -1,9 +1,9 @@
 let fs = require('fs')
 let handler = async (m, { conn, text }) => {
   conn.hartatahta = conn.hartatahta ? conn.hartatahta : {}
-  if (m.chat in conn.hartatahta) throw 'Masih ada yang sedang membuat\nTeks Harta Tahta\ndi chat ini... tunggu sampai selesai'
+  if (m.chat in conn.hartatahta) throw '*_El Bot todavia esta creando un diseño_*/n/n*_Espere a que termine..._*'
   else conn.hartatahta[m.chat] = true
-  m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
+  m.reply('*_Creando diseño..._*\n/n*_Espere alrededor de 1 minuto_*')
   try {
     let img = await ht(text ? text : ':v')
     conn.sendFile(m.chat, img, 'Logo.png', '*© The Shadow Brokers - Bot*', m)

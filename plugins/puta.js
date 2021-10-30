@@ -1,16 +1,16 @@
 let handler = async (m, { conn, command, text }) => {
   if (!text) throw `Quién es *${command.replace('how', '').toUpperCase()}*`
   conn.reply(m.chat, `
-*${text}* *esp* *${Math.floor(Math.random()  103890)}%* *${command.replace('how', '').toUpperCase()}*
+*${text}* es *${Math.floor(Math.random() * 2000)}*% ${command.replace('how', '').toUpperCase()} Alguien quire sus servicios? xd
 `.trim(), m, m.mentionedJid ? {
     contextInfo: {
       mentionedJid: m.mentionedJid
     }
   } : {})
 }
-handler.help = ['puta'].map(v => 'puta' + v + ' quien?')
+handler.help = ['gay', 'lesbi'].map(v => 'how' + v + ' siapa?')
 handler.tags = ['kerang']
-handler.command = /^(puta)/i
+handler.command = /^(gay|lesbi)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

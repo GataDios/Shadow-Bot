@@ -5,7 +5,7 @@ let les = await axios.get('https://meme-api.herokuapp.com/gimme/Cristianoronaldo
   }
 handler.help = ['CristianoRonaldo']
 handler.tags = ['images']
-handler.command = /^(CristianoRonaldo)$/i
+handler.command = /^(cristianoronaldo)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

@@ -180,6 +180,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟🐺 _#zodiac *AAAA MM DD*_
 ° ඬ⃟🐺 _#scan *numero con prefijo del pais*_
 ° ඬ⃟🐺 _#kpop_
+° ඬ⃟🐺 _#spamchat *texto*_
 
 *<AUDIOS/>* 
 
@@ -237,6 +238,9 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ~- Si falla vuelva a intentarlo y corrobore que cumpla con lo antes mencionado~
 ° ඬ⃟🖍️ _nulis *texto*_
 ~- Crea una tipo de lista con el texto que le pongas~
+° ඬ⃟🖍️ _nulis2 *texto*_
+~- Crea una tipo de lista con el texto que le pongas~
+
 
 *<AVISOS/>*
 

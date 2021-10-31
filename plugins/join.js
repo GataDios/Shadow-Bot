@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
     if (!code) throw 'Link invalido'
     if (isMods || isOwner || m.fromMe) {
         let res = await conn.acceptInvite(code)
-        m.reply(`*Se unió con éxito al grupo ${res.gid}`)*
+        m.reply(`*Se unió con éxito al grupo ${res.gid}*`)
     } else {
     
         let name = conn.getName(m.sender)

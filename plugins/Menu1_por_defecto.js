@@ -396,7 +396,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menu|help|info|\?)$/i
+handler.command = /^(menu|help|info|menú|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

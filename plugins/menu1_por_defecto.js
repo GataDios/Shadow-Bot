@@ -28,9 +28,9 @@ let tags = {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
+  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 }
 const defaultMenu = {
-  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*
 

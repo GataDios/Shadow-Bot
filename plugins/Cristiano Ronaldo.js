@@ -3,9 +3,9 @@ const axios = require('axios')
 let les = await axios.get('https://meme-api.herokuapp.com/gimme/Cristianoronaldo')
             conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title}`, m)
   }
-handler.help = ['Messi']
+handler.help = ['CristianoRonaldo']
 handler.tags = ['images']
-handler.command = /^(messi)$/i
+handler.command = /^(CristianoRonaldo)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

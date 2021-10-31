@@ -272,7 +272,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 }
 handler.help = ['menu2', 'help2', '?2']
 handler.tags = ['main']
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(menu2|help2|\?2)$/i
 
 handler.fail = null
 

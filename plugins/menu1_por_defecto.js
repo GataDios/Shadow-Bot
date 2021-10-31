@@ -1,7 +1,6 @@
 let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
-  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 let tags = {
   'main': 'Main',
   'rpg': 'Epic RPG',
@@ -30,6 +29,9 @@ let tags = {
   'info': 'Info',
   '': 'No Category',
 }
+{
+conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
+  }
 const defaultMenu = {
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*

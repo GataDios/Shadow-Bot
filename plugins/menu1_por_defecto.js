@@ -1,6 +1,7 @@
 let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
+  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 let tags = {
   'main': 'Main',
   'rpg': 'Epic RPG',
@@ -28,7 +29,6 @@ let tags = {
   'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
-  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 }
 const defaultMenu = {
   before: `

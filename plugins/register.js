@@ -2,11 +2,11 @@ const { createHash } = require('crypto')
 let Reg = /(.*)([.|])([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.DATABASE._data.users[m.sender]
-  if (user.registered === true) throw `Ya estás registrado\nQuieres volver a registrarte? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
-  if (!Reg.test(text)) throw `Formato incorrecto\n*${usedPrefix}daftar nombre.edad\nEjemplo: #daftar Shadow.18*`
+  if (user.registered === true) throw `*_Ya estás registrado en mi base de datos_*`
+  if (!Reg.test(text)) throw `*_Formato incorrecto*_\n*_${usedPrefix}daftar nombre.edad_*\n*_Ejemplo:_*\n*_#daftar Shadow.18_*`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw 'El nombre no puede estar vacío'
-  if (!age) throw 'La edad no puede estar vacía'
+  if (!name) throw '*_El nombre no puede estar vacío_*\n*_${usedPrefix}daftar nombre.edad_*'
+  if (!age) throw '*_La edad no puede estar vacía_*\n*_${usedPrefix}daftar nombre.edad_*'
   user.name = name
   user.age = parseInt(age)
   user.regTime = + new Date
@@ -17,8 +17,7 @@ Registrado con éxito!
 
 ╭─「 Info 」
 │ Nombre: ${name}
-│ Edad: ${age}thn
-│ SN: ${sn}
+│ Edad: ${age}
 ╰────
 `.trim())
 }

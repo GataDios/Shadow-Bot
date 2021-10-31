@@ -5,8 +5,8 @@ let handler = async function (m, { text, usedPrefix }) {
   if (user.registered === true) throw `*_Ya estás registrado en mi base de datos_*`
   if (!Reg.test(text)) throw `*_Formato incorrecto*_\n*_${usedPrefix}daftar nombre.edad_*\n*_Ejemplo:_*\n*_#daftar Shadow.18_*`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '*_El nombre no puede estar vacío_*\n*_${usedPrefix}daftar nombre.edad_*'
-  if (!age) throw '*_La edad no puede estar vacía_*\n*_${usedPrefix}daftar nombre.edad_*'
+  if (!name) throw '*_El nombre no puede estar vacío_*'
+  if (!age) throw '*_La edad no puede estar vacía_*'
   user.name = name
   user.age = parseInt(age)
   user.regTime = + new Date

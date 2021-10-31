@@ -30,6 +30,7 @@ let tags = {
   '': 'No Category',
 }
 const defaultMenu = {
+  conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*
 

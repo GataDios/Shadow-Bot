@@ -5,7 +5,7 @@ let les = await axios.get('https://meme-api.herokuapp.com/gimme/futbol')
   }
 handler.help = ['futbol']
 handler.tags = ['images']
-handler.command = /^(futbol)$/i
+handler.command = /^(futbol|fútbol|football|\)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

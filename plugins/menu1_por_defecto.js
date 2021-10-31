@@ -29,9 +29,6 @@ let tags = {
   'info': 'Info',
   '': 'No Category',
 }
-{
-conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-  }
 const defaultMenu = {
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*
@@ -299,6 +296,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ${'```%npmdesc```'}
 `,
 }
+conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))

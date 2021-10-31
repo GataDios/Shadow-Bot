@@ -8,7 +8,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
       conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-      conn.sendFile(m.chat, 'src/menu.jpg', '', '', m)
+      conn.reply.sendFile(m.chat, 'src/menu.jpg', '', '', m)
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_「 THE SHADOW BROKERS - BOT 」_*

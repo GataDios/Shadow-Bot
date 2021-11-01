@@ -47,9 +47,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['menu2', 'help2', '?2']
-handler.tags = ['main']
-handler.command = /^(menu2|help2|\?2)$/i
+handler.help = ['Menu_mas_18']
+handler.tags = ['adult']
+handler.command = /^(menu_mas_18)$/i
 
 handler.fail = null
 

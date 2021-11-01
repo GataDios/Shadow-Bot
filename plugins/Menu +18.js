@@ -1,5 +1,5 @@
-let handler = async m => m.reply(`
-  conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)`.trim())
+let handler = async m => m.reply
+(`conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)`.trim())
 let handler = async m => m.reply(`
 *_「 THE SHADOW BROKERS - BOT 」_*
 *_~⚠️USAR BAJO SU RESPONSABILIDAD~⚠️_*

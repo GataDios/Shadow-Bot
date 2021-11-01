@@ -1,7 +1,6 @@
 let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
-
 const defaultMenu = {
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*
@@ -276,32 +275,10 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 
 *IGNORAR LO SIGUIENTE*`,
 }
-    if (process.send) {
-      process.send('uptime')
-      _muptime = await new Promise(resolve => {
-            conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
+        conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
         process.once('message', resolve)
         setTimeout(resolve, 1000)
-      }) * 1000
     }
-    let muptime = clockString(_muptime)
-    let uptime = clockString(_uptime)
-    let totalreg = Object.keys(global.DATABASE._data.users).length
-    let rtotalreg = Object.values(global.DATABASE._data.users).filter(user => user.registered == true).length
-    let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
-      return {
-        help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
-        tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
-        prefix: 'customPrefix' in plugin,
-        limit: plugin.limit,
-        premium: plugin.premium,
-        enabled: !plugin.disabled,
-      }
-    })
-    for (let plugin of help)
-      if (plugin && 'tags' in plugin)
-        for (let tag of plugin.tags)
-          if (!(tag in tags) && tag) tags[tag] = tag
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || defaultMenu.before
     let header = conn.menu.header || defaultMenu.header

@@ -1,6 +1,15 @@
-let handler = async m => m.reply
-(`conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)`.trim()),
-let handler = async m => m.reply(`
+let { performance } = require('perf_hooks')
+let fs = require ('fs')
+let path = require('path')
+let handler  = async (m, { conn, usedPrefix }) => { 
+  let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
+  let _uptime = process.uptime() * 1000
+  let uptime = clockString(_uptime) 
+  let totalreg = Object.keys(global.DATABASE._data.users).length
+  let old = Math.round(performance.now())
+      conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)
+  let neww = Math.round(performance.now())
+  conn.reply(m.chat, `
 *_「 THE SHADOW BROKERS - BOT 」_*
 *_~⚠️USAR BAJO SU RESPONSABILIDAD~⚠️_*
 
@@ -36,9 +45,23 @@ let handler = async m => m.reply(`
 ° ඬ⃟🔞 _#indohot_
 
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
-`.trim()) // Tambah sendiri kalo mau
-handler.help = ['Menumas18']
-handler.tags = ['info']
-handler.command = /^menumas18$/i
+`.trim(), m)
+}
+handler.help = ['menu2', 'help2', '?2']
+handler.tags = ['main']
+handler.command = /^(menu2|help2|\?2)$/i
+
+handler.fail = null
 
 module.exports = handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function clockString(ms) {
+  let h = Math.floor(ms / 3600000)
+  let m = Math.floor(ms / 60000) % 60
+  let s = Math.floor(ms / 1000) % 60
+  console.log({ms,h,m,s})
+  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
+}

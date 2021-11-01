@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (/webp|image|video/g.test(mime)) {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
       let img = await q.download()
-      if (!img) throw `Error vuelva a intentarlo, recuerde responder al video o imagen con ${usedPrefix + command}`
+      if (!img) throw `Error vuelva a intentarlo, recuerde responder a la imagen con ${usedPrefix + command}`
       let out
       try {
         if (/webp/g.test(mime)) out = await webp2png(img)
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw `Lo siento.${m.isGroup ? ', Error vuelva a intentarlo, recuerde enviar la imagen o video con la leyenda del comando (#s, #sgif, etc)' : ''}`
+    else throw `*_Lo siento, conversion fallida.${m.isGroup ?_* ', _*Error vuelva a intentarlo, recuerde enviar la imagen con la leyenda del comando (#s o #sticker)_*' : ''}`
   }
 }
 handler.help = ['stiker ', 'stiker <url>']

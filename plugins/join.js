@@ -17,11 +17,11 @@ let handler = async (m, { conn, text, isMods, isOwner }) => {
             date: new Date * 1
         }
         for (let jid of Object.entries(global.Owner).filter(v => v[1].isReport).map(v => v[0].replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) m.reply('*dari:* ' + m.sender.split('@')[0] + '\n*Link:* ' + link, jid)
-        m.reply('*_En proceso.. le llego notificacion a todos mis moderadores, tan pronto puedan me agregaran al grupo_*\n\n*_No hacer spam del comando con el mismo enlace o seran bloqueados del uso del Bot_*\n\n*_El Bot no se agrega a grupos con menos de 15 participantes_*')
+        m.reply('*_En proceso.. le llego la notificacion de solicitud a mi creadopr y mis moderadores, tan pronto puedan me agregaran al grupo_*\n\n*_No hacer spam del comando con el mismo enlace o seran bloqueados del uso del Bot_*\n\n*_El Bot no se agrega a grupos con menos de 10 participantes_*')
     }
 }
 handler.help = ['join [chat.whatsapp.com]']
-handler.tags = ['premium']
+handler.tags = ['info']
 
 handler.command = /^join$/i
 

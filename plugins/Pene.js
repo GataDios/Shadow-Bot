@@ -1,6 +1,6 @@
 const axios = require('axios')
  let handler = async(m, { conn }) => {
-let les = await axios.get('https://meme-api.herokuapp.com/gimme/Pene')
+let les = await axios.get('https://meme-api.herokuapp.com/gimme/penexxx')
             conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title}`, m)
   }
 handler.help = ['pene']

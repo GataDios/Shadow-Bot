@@ -37,8 +37,8 @@ let handler = async m => m.reply(`
 
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['Menu_+18']
+handler.help = ['Menu_18']
 handler.tags = ['info']
-handler.command = /^menu_+18$/i
+handler.command = /^menu_18$/i
 
 module.exports = handler

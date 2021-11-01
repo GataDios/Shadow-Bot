@@ -47,9 +47,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['menu_+18']
+handler.help = ['comandosadultos']
 handler.tags = ['info']
-handler.command = /^(menu_+18?)$/i
+handler.command = /^(comandosadultos)$/i
 
 handler.fail = null
 

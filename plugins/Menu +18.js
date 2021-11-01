@@ -7,7 +7,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now()),
-                 conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m),
+                 conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_「 THE SHADOW BROKERS - BOT 」_*

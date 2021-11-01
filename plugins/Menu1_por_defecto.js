@@ -124,6 +124,13 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟🧧 _#tomp3_
 ° ඬ⃟🧧 _#toimg_
 
+*<FUTBOL RANDOM>*
+
+° ඬ⃟⚽ _#futbol_
+° ඬ⃟⚽ _#Messi_
+° ඬ⃟⚽ _#CristianoRonaldo_
+° ඬ⃟⚽ _#siiuuuu_
+
 *<RANDOM/>*
 
 ° ඬ⃟👾 _#meme_

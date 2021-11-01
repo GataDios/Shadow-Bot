@@ -1,6 +1,10 @@
 let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
+let tags = {
+  'info': 'Info',
+  '': 'No Category',
+}
 const defaultMenu = {
   before: `
 *_「 THE SHADOW BROKERS - BOT 」_*

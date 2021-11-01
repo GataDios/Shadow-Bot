@@ -1,5 +1,4 @@
-let handler = async m => m.reply(`
-  conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)`.trim())
+(`conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)`.trim())
 let handler = async m => m.reply(`
 *_「 THE SHADOW BROKERS - BOT 」_*
 *_~⚠️USAR BAJO SU RESPONSABILIDAD~⚠️_*
@@ -37,8 +36,8 @@ let handler = async m => m.reply(`
 
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim()) // Tambah sendiri kalo mau
-handler.help = ['Menu_18']
+handler.help = ['Menu_mas18']
 handler.tags = ['info']
-handler.command = /^menu_18$/i
+handler.command = /^menu_mas18$/i
 
 module.exports = handler

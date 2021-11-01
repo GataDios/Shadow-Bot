@@ -7,7 +7,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
-           conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)
+  conn.sendFile(m.chat, 'media/Oxxo.mp3', '', 'xd', m)
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 *_「 THE SHADOW BROKERS - BOT 」_*
@@ -47,9 +47,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 █║▌║ 𝕿𝖍𝖊 𝕾𝖍𝖆𝖉𝖔𝖜 𝕭𝖗𝖔𝖐𝖊𝖗𝖘 - 𝕭𝖔𝖙 ║▌║█
 `.trim(), m)
 }
-handler.help = ['comandos_+18']
+handler.help = ['menu_+18']
 handler.tags = ['info']
-handler.command = /^(menu+18?)$/i
+handler.command = /^(menu_+18?)$/i
 
 handler.fail = null
 

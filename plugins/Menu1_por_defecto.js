@@ -207,6 +207,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟🎧 _#diagnosticadocongay_
 ° ඬ⃟🎧 _#bañate_
 ° ඬ⃟🎧 _#felizjueves_
+° ඬ⃟🎧 _#bot_gemime_
 
 *<CHAT ANONIMO/>*
 

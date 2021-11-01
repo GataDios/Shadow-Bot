@@ -1,11 +1,11 @@
 const axios = require('axios')
  let handler = async(m, { conn }) => {
-let les = await axios.get('https://meme-api.herokuapp.com/gimme/ClubAmerica')
+let les = await axios.get('https://meme-api.herokuapp.com/gimme/paraguay')
             conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title}`, m)
   }
-handler.help = ['Clubamerica']
+handler.help = ['paraguay']
 handler.tags = ['images']
-handler.command = /^(clubamerica)$/i
+handler.command = /^(paraguay)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

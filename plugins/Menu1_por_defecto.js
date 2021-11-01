@@ -158,6 +158,12 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟🔞 _#Image Teen desnuda_
 *- Si la imagen se envía en formato de archivo reintentar nuevamente*
 
+*<VIDEOS +18/>*
+
+° ඬ⃟🔞 _#video1_
+° ඬ⃟🔞 _#video2_
+° ඬ⃟🔞 _#video3_
+
 *<COMANDOS +18/>*
 - Usuarios registrados 
 ​​​
@@ -168,6 +174,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟🔞 _#hentai_
 ° ඬ⃟🔞 _#indohot_
 ° ඬ⃟🔞 _#panties_
+° ඬ⃟🔞 _#pene_
 
 *<REGISTRO/>*
 
@@ -257,6 +264,8 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ~- Puede ser diferentes colores las letras (es aleatorio)~
 ~- Si falla vuelva a intentarlo y corrobore que cumpla con lo antes mencionado~
 ° ඬ⃟🖍️ _nulis *texto*_
+~- Crea una tipo de lista con el texto que le pongas~
+° ඬ⃟🖍️ _nulis2 *texto*_
 ~- Crea una tipo de lista con el texto que le pongas~
 
 *<AVISOS/>*

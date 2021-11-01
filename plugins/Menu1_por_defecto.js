@@ -338,7 +338,6 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       process.send('uptime')
       _muptime = await new Promise(resolve => {
             conn.sendFile(m.chat, 'media/Menu audio.mp3', '', 'xd', m)
-            conn.sendFile(m.chat, 'media/Cancion del menu 1.mp3', '', 'xd', m)
         process.once('message', resolve)
         setTimeout(resolve, 1000)
       }) * 1000

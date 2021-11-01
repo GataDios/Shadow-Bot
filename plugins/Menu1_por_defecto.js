@@ -46,6 +46,7 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟ℹ️ _#reglasdelbot_
 ° ඬ⃟ℹ️ _#creditosyagradecimientos_
 ° ඬ⃟ℹ️ _#codigoparaaudios_
+° ඬ⃟ℹ️ _#MenuMas18_
 
 *<NUMERO DEL CREADOR Y DE MODERADORES>*
 - Únicamente contactar números +1 
@@ -150,38 +151,10 @@ _- Regalos de numero virtuales, pruebas de comandos nuevos, ayuda casi inmediata
 ° ඬ⃟👾 _#iqtest_
 ° ඬ⃟👾 _#nyan_
 
-
 *<COMANDOS +18/>*
+- Se actualizaron los comandos por lo que se tuvo que dividir en otro menú, solicítalo con el siguiente comando: 
 ​​​
-° ඬ⃟🔞 _#Image Hentai sin censura_
-° ඬ⃟🔞 _#Image Hentai_
-° ඬ⃟🔞 _#image yaoi_
-° ඬ⃟🔞 _#Image loli_
-° ඬ⃟🔞 _#Image Porno_
-° ඬ⃟🔞 _#Image Tetas_
-° ඬ⃟🔞 _#Image chico desnudo_
-° ඬ⃟🔞 _#Image Pene_
-° ඬ⃟🔞 _#Image XXX_
-° ඬ⃟🔞 _#Image Teen desnuda_
-*- Si la imagen se envía en formato de archivo reintentar nuevamente*
-
-*<VIDEOS +18/>*
-
-° ඬ⃟🔞 _#video1_
-° ඬ⃟🔞 _#video2_
-° ඬ⃟🔞 _#video3_
-
-*<COMANDOS +18/>*
-- Usuarios registrados 
-​​​
-° ඬ⃟🔞 _#lesbian_
-° ඬ⃟🔞 _#porno_
-° ඬ⃟🔞 _#randomnsfw_
-° ඬ⃟🔞 _#pornogif_
-° ඬ⃟🔞 _#hentai_
-° ඬ⃟🔞 _#indohot_
-° ඬ⃟🔞 _#panties_
-° ඬ⃟🔞 _#pene_
+° ඬ⃟🔞 _#MenuMas18_
 
 *<REGISTRO/>*
 

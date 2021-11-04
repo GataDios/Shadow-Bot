@@ -20,7 +20,7 @@ let handler = async (m, { conn, text }) => {
   }
 }
 handler.help = ['wanted']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^wanted$/i
 handler.owner = false
 handler.mods = false

@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
   m.reply('Listo.. chat desbaneado!')
 }
 handler.help = ['unbanchat']
-handler.tags = ['owner']
+handler.tags = ['General']
 handler.command = /^unbanchat$/i
 handler.owner = true
 

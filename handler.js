@@ -286,7 +286,7 @@ module.exports = {
             if (!['unbanuser.js', 'inv.js', 'link.js', 'creator.js', 'profile.js'].includes(name) && user && user.banned && !isROwner) {
               if (!opts['msgifbanned']) m.reply(`*ANDA TERBANNED* ${user.bannedReason ? `\nKarena *${user.bannedReason}*` : ''}
 
-Hubungi: 
+Contacto: 
 ${global.owner.map((v, i) => '*Owner ' + (i + 1) + ':* wa.me/' + v).join('\n') + '\n\n' + global.mods.map((v, i) => '*Moderator ' + (i + 1) + ':* wa.me/' + v).join('\n')}
 
 Kuy join group Official *${conn.getName(this.user.jid)}*: 
@@ -478,10 +478,10 @@ ${(global.linkGC).map((v, i) => '*Group ' + (i + 1) + '*\n' + v).join`\n\n`}
     let chat = global.DATABASE._data.chats[m.key.remoteJid]
     if (chat.delete) return
     await this.reply(m.key.remoteJid, `
-Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
+*_Se detectó que @${m.participant.split`@`[0]} ha eliminado un mensaje_*
 
-Untuk mematikan fitur ini, ketik
-*.enable delete*
+*_Para desactivar esta función, escriba:_*
+*_#enable delete_*
 `.trim(), m.message, {
       contextInfo: {
         mentionedJid: [m.participant]

@@ -33,9 +33,9 @@ global.Owner = {
     isReport: true,
     isMods: true, // if true this number will send if user use command /moderadores or /creator
   },
-  '14509001764': {} // ignore if you don't want anything, like name dll
+  '14504': {} // ignore if you don't want anything, like name dll
 }
-global.mods = ['14509001764'] // Want some help?
+global.mods = ['1450'] // Want some help?
 global.prems = [''] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'

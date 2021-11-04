@@ -82,7 +82,7 @@ Para editar el Bot desde android en archivos ZIP: https://youtu.be/U12188A2tpA
 `.trim(), m)
 }
 handler.help = ['tutorial']
-handler.tags = ['about']
+handler.tags = ['General']
 handler.command = /^(tutorial)$/i
 handler.owner = false
 handler.mods = false

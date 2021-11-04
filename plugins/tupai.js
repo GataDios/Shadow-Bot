@@ -27,7 +27,7 @@ let handler = async (m, { conn }) => {
     }
 }
 handler.help = ['tupai']
-handler.tags = ['audio']
+handler.tags = ['General']
 handler.command = /^(tupai)$/i
 handler.owner = false
 handler.mods = false

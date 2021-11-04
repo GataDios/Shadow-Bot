@@ -42,7 +42,7 @@ global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   nzcha: 'http://nzcha-apii.herokuapp.com',
-  bg: 'https://api.simsimi.net/v1/?text=" + encodeURIComponent(text) + "&lang=es',
+  bg: 'https://api.simsimi.net/v2/?text=" + encodeURIComponent(text) + "&lang=es',
   fdci: 'https://api.fdci.se',
   dzx: 'https://api.dhamzxploit.my.id',
   zahir: 'https://zahirr-web.herokuapp.com',

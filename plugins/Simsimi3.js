@@ -8,8 +8,8 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
   .then(batch => {
     conn.updatePresence(m.chat, Presence.composing)
   conn.reply(m.chat, `${batch.success}`, m)
-  }) .catch(() => { conn.reply(m.chat, `_¡La función simi es errónea! Perdón :(_`, m) })
-}
+  }
+	
 handler.help = ['Simsimi3'].map(v => v + ' ')
 handler.tags = ['General']
 

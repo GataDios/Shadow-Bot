@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   })
 }
 handler.help = ['tovn']
-handler.tags = ['audio']
+handler.tags = ['General']
 
 handler.command = /^to(vn|(ptt)?)$/i
 

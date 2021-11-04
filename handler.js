@@ -518,7 +518,7 @@ Untuk mematikan fitur ini, ketik
       
       await this.send(`${tag},${JSON.stringify(NodePayload)}`)
     }
-    await this.sendMessage(from, '*_NO LLAMADAS AL BOT POR FAVOR, NO QUEREMOS BLOQUEARLO, EVITENOS LA PENA DE HACERLO_*\n*_SI ESTE INCIDENTE SE REPITE USTED SERA BLOQUEADO_*', MessageType.extendedText)
+    await this.sendMessage(from, '*_⚠️NO LLAMAR AL BOT POR FAVOR, NO QUEREMOS BLOQUEARLO, EVITENOS LA PENA DE HACERLO⚠️_*\n\n*_⚠️SI ESTE INCIDENTE SE REPITE USTED SERA BLOQUEADO⚠️_*', MessageType.extendedText)
   }
 }
 
@@ -532,7 +532,7 @@ global.dfail = (type, m, conn) => {
     private: 'Este comando solo se puede usar en el chat privado!',
     admin: 'Este comando es solo para los *Admins* del grupo!',
     botAdmin: 'Ascender al bot como *Admin* para usar este comando!',
-    unreg: 'Regístrese para utilizar esta función escribiendo:\n\n*#daftar nombre.edad*\n\nEjemplo: *#daftar Shadow.18*'
+    unreg: '*_Regístrese para utilizar esta función escribiendo:_*\n\n*_#daftar nombre.edad_*\n\n*_Ejemplo:_*\n*_#daftar Shadow.18_*'
   }[type]
   if (msg) return m.reply(msg)
 }

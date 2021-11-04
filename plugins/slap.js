@@ -17,7 +17,7 @@ let stiker = await sticker(null, url, 'Slap', '@Kokoronationz')
   }
 }
 handler.help = ['slap']
-handler.tags = ['expression']
+handler.tags = ['General']
 handler.command = /^slap/i
 
 module.exports = handler

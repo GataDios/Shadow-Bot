@@ -2,7 +2,7 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'Main',
+  'general': 'General',
   'rpg': 'Epic RPG',
   'game': 'Game',
   'xp': 'Exp & Limit',

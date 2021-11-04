@@ -12,7 +12,7 @@ let handler = async (m, { conn, args }) => {
     m.reply('Kamu telah di Unbanned!!', mention)
 }
 handler.help = ['unban']
-handler.tags = ['owner']
+handler.tags = ['General']
 handler.command = /^unban(user)?$/i
 handler.mods = true
 

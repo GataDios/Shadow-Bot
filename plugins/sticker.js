@@ -37,7 +37,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 handler.help = ['stiker ', 'stiker <url>']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
 module.exports = handler

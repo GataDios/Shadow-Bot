@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
   }
 }
 handler.help = ['wasted']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^wasted$/i
 handler.owner = false
 handler.mods = false

@@ -11,7 +11,7 @@ let handler  = async (m, { conn, args }) => {
    }
 }
 handler.help = ['tovideo (reply stiker)']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^tovideo$/i
 
 module.exports = handler

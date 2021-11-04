@@ -518,7 +518,7 @@ Untuk mematikan fitur ini, ketik
       
       await this.send(`${tag},${JSON.stringify(NodePayload)}`)
     }
-    await this.sendMessage(from, '*_⚠️NO LLAMAR AL BOT POR FAVOR, NO QUEREMOS BLOQUEARLO, EVITENOS LA PENA DE HACERLO⚠️_*\n\n*_⚠️SI ESTE INCIDENTE SE REPITE USTED SERA BLOQUEADO⚠️_*', MessageType.extendedText)
+    await this.sendMessage(from, '*_⚠️NO LLAMAR AL BOT POR FAVOR, NO QUEREMOS BLOQUEARL@, EVITENOS LA PENA DE HACERLO⚠️_*\n\n*_⚠️SI ESTE INCIDENTE SE REPITE USTED SERA BLOQUEAD@⚠️_*', MessageType.extendedText)
   }
 }
 

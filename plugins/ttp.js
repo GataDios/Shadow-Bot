@@ -14,7 +14,7 @@ let handler  = async (m, { conn, text }) => {
   } else m.reply('Textnya apa om?')
 }
 handler.help = ['ttp <teks>']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^ttp$/i
 
 handler.fail = null

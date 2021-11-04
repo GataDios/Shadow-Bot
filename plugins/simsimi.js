@@ -7,7 +7,7 @@ let handler = async (m, { text }) => {
   m.reply(json.result.jawab)
 }
 handler.help = ['simi', 'simsimi', 'simih'].map(v => v + ' [teks]')
-handler.tags = ['fun']
+handler.tags = ['General']
 handler.command = /^((sim)?simi|simih)$/i
 
 module.exports = handler

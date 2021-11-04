@@ -17,7 +17,7 @@ let handler = async (m, { conn, DevMode }) => {
     }
 }
 handler.help = ['ping', 'speed']
-handler.tags = ['info', 'tools']
+handler.tags = ['General']
 
 handler.command = /^(ping|speed)$/i
 module.exports = handler

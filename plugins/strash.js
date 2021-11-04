@@ -20,7 +20,7 @@ let handler = async (m, { conn, text }) => {
   }
 }
 handler.help = ['trash']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^trash$/i
 
 module.exports = handler

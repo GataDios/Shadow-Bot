@@ -40,7 +40,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
   }
 }
 handler.help = ['toimg (reply)']
-handler.tags = ['sticker']
+handler.tags = ['General']
 handler.command = /^toimg$/i
 handler.owner = false
 handler.mods = false

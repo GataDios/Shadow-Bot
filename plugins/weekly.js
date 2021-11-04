@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
     }
 }
 handler.help = ['weekly']
-handler.tags = ['rpg']
+handler.tags = ['General']
 handler.command = /^(weekly)$/i
 
 handler.fail = null

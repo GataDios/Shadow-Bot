@@ -21,7 +21,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
 }
 handler.help = ['translate'].map(v => v + ' [lang] [teks]')
 
-handler.tags = ['tools']
+handler.tags = ['General']
 handler.command = /^(tr(anslate)?)$/i
 
 module.exports = handler

@@ -6,8 +6,8 @@ let handler = async (m, { conn, text }) => {
  try {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw 'Tidak ada foto'
-  if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
+  if (!mime) throw '*_Sin imagen_*'
+  if (!/image\/(jpe?g|png)/.test(mime)) throw `*_El archivo ${mime} no es compatible_*`
   let img = await q.download()
   let url = await uploadImage(img)
   let wanted = global.API('dzx', '/api/canvas/circle', { url }) //`https://api.dhamzxploit.my.id/api/canvas/circle?url=${url}`
@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
     quoted: m
   })
  } catch (e) {
-   m.reply('Conversion Failed')
+   m.reply('*_Conversion fallida_*\n\n*_Vuelva a intentarlo_*\n\n*_Recuerde enviar una imagen con el comando #circle o responder a la imagen con el comando_*')
   }
 }
 handler.help = ['circle']

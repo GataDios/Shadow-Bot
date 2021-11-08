@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
     quoted: m
   })
  } catch (e) {
-   m.reply('Conversión fallida, recuerde responder a una imagen')
+   m.reply('Conversion Failed')
   }
 }
 handler.help = ['circle']

@@ -1,8 +1,8 @@
-# Games-Wabot
+# Shadow-Bot
 
-<a href="https://github.com/BochilGaming/games-wabot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/BochilGaming/games-wabot?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/BochilGaming/games-wabot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/BochilGaming/games-wabot?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/BochilGaming/games-wabot/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/BochilGaming/games-wabot?label=Stars&color=yellow&style=flat-square"></a>
+<a href="https://github.com/TheShadowBrokers1/Shadow-Bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/TheShadowBrokers1/Shadow-Bot?label=Forks&color=blue&style=flat-square"></a>
+<a href="https://github.com/TheShadowBrokers1/Shadow-Bot/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/TheShadowBrokers1/Shadow-Bot?label=Watchers&color=green&style=flat-square"></a>
+<a href="https://github.com/TheShadowBrokers1/Shadow-Bot/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/TheShadowBrokers1/Shadow-Bot?label=Stars&color=yellow&style=flat-square"></a>
 <a href="https://github.com/BochilGaming/games-wabot/graphs/contributors"><img title="Contributors" src="https://img.shields.io/github/contributors/BochilGaming/games-wabot?label=Contributors&color=blue&style=flat-square"></a>
 <a href="https://github.com/BochilGaming/games-wabot/issues"><img title="Issues" src="https://img.shields.io/github/issues/BochilGaming/games-wabot?label=Issues&color=success&style=flat-square"></a>
 <a href="https://github.com/BochilGaming/games-wabot/issues?q=is%3Aissue+is%3Aclosed"><img title="Issues" src="https://img.shields.io/github/issues-closed/BochilGaming/games-wabot?label=Issues&color=red&style=flat-square"></a>
